@@ -1,0 +1,277 @@
+{
+  "role": "business-analyst",
+  "built": "2026-10-16",
+  "rules": "see ../README.md",
+  "sources": [
+    {
+      "id": "ireb-cpre-glossary",
+      "url": "https://cpre.ireb.org/en/downloads-and-resources/glossary",
+      "name": "IREB CPRE Online Glossary (requirements engineering)",
+      "tier": 1,
+      "layer": "institutional",
+      "access": "open",
+      "status": "active",
+      "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© IREB)",
+      "rationale": "The International Requirements Engineering Board's definitions of core requirements-engineering terms, the central reference for its certification.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "whole glossary",
+      "next_check": "2026-11-16",
+      "perspective": "canonical",
+      "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+      "last_verified": {
+        "how": "fetched without credentials",
+        "date": "2026-10-16",
+        "bytes": 741786,
+        "http_status": 200,
+        "content_type": "text/html",
+        "text_verified": true
+      },
+      "citation_policy": "attributed_citation_only",
+      "pipeline_readable": true
+    },
+    {
+      "id": "ireb-cpre-foundation-syllabus",
+      "url": "https://isqi.org/media/7f/9a/3e/1744288053/cpre_foundationlevel_syllabus_EN_v.3.2.pdf",
+      "name": "IREB CPRE Foundation Level Syllabus v3.2 (PDF, hosted by ISQI)",
+      "tier": 1,
+      "layer": "institutional",
+      "access": "open",
+      "status": "active",
+      "licence": "terms stated in the document itself: \"Any individual or group of individuals may use this syllabus as a basis for articles, books, or other derived publications, provided the copyright of the authors and IREB e.V. as the source and owner of this document is acknowledged in such publications.\"",
+      "rationale": "The learning objectives for IREB's foundation certification, hosted by ISQI, the examining institute. It is the most detailed free statement of requirements-engineering knowledge.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "whole document",
+      "next_check": "2026-11-16",
+      "perspective": "canonical",
+      "last_verified": {
+        "how": "fetched without credentials; full text extracted and read",
+        "date": "2026-10-16",
+        "note": "Syllabus v3.2.0, February 26, 2024. The file is AES-encrypted (owner-password restrictions, opens with an empty password); text extraction worked.",
+        "bytes": 561683,
+        "quotable": "derived use with attribution is permitted; reproduction needs written permission, so paraphrase and cite, do not copy passages",
+        "text_check": {
+          "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+          "pages": 49,
+          "pages_with_text": 47,
+          "characters_extracted": 96021
+        },
+        "http_status": 200,
+        "reuse_terms": {
+          "quote": "Any individual or group of individuals may use this syllabus as a basis for articles, books, or other derived publications, provided the copyright of the authors and IREB e.V. as the source and owner of this document is acknowledged in such publications.",
+          "where": "\"Terms of Use\" page; it also says \"No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means ... without the prior written permission of either the authors or IREB e.V.\""
+        },
+        "content_type": "application/pdf",
+        "text_verified": true
+      },
+      "pipeline_readable": true
+    },
+    {
+      "id": "bcs-ba-foundation-syllabus",
+      "url": "https://www.bcs.org/media/e3fllbw3/ba-foundation-syllabus.pdf",
+      "name": "BCS Foundation Certificate in Business Analysis: syllabus (PDF)",
+      "tier": 1,
+      "layer": "institutional",
+      "access": "open",
+      "status": "active",
+      "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© BCS)",
+      "rationale": "The UK chartered institute's syllabus for business analysis: role, strategic context, investigating business situations, business cases and requirements.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "whole document",
+      "next_check": "2026-11-16",
+      "perspective": "canonical",
+      "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+      "last_verified": {
+        "how": "fetched without credentials",
+        "date": "2026-10-16",
+        "note": "Text layer read (sample sentences extracted).",
+        "bytes": 7535435,
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "text_verified": true
+      },
+      "citation_policy": "attributed_citation_only",
+      "pipeline_readable": true
+    },
+    {
+      "id": "pmi-pba-exam-content-outline",
+      "url": "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/professional-business-analysis-exam-outline.pdf",
+      "name": "PMI-PBA Examination Content Outline (PDF)",
+      "tier": 1,
+      "layer": "institutional",
+      "access": "open",
+      "status": "active",
+      "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© PMI)",
+      "rationale": "PMI's statement of the tasks and domains of professional business analysis (needs assessment, planning, analysis, traceability, evaluation). Its practice guides are paid and excluded.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "content outline only",
+      "next_check": "2026-11-16",
+      "perspective": "canonical",
+      "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+      "last_verified": {
+        "how": "fetched without credentials",
+        "date": "2026-10-16",
+        "note": "Text layer read in part (title and headings extracted).",
+        "bytes": 5682485,
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "text_verified": true
+      },
+      "citation_policy": "attributed_citation_only",
+      "pipeline_readable": true
+    },
+    {
+      "id": "iiba-ai-impact-blog",
+      "url": "https://www.iiba.org/business-analysis-blogs/ais-impact-on-business-analysis/",
+      "name": "IIBA: AI's Impact on Business Analysis (blog, July 2023)",
+      "tier": 3,
+      "layer": "ai-native",
+      "access": "open",
+      "status": "active",
+      "licence": "© IIBA / the author",
+      "rationale": "A practitioner article (by a co-founder of an analysis consultancy) on how AI changes business analysis, published on the professional body's public blog. Dated 2023, so check currency.",
+      "tier_note": "Tier 3 on purpose: the article is by an individual practitioner (a consultancy co-founder), published on the IIBA blog, so it is not an IIBA statement. Proposal text says tier 2; left at 3 per its own tier rules.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "whole article",
+      "next_check": "2026-11-16",
+      "perspective": "field",
+      "last_verified": {
+        "how": "fetched without credentials",
+        "date": "2026-10-16",
+        "note": "The page shows \"Become a Member\" only as site navigation; the article body (about 6,800 characters) loads in full with no wall.",
+        "bytes": 181425,
+        "http_status": 200,
+        "content_type": "text/html",
+        "text_verified": true
+      },
+      "pipeline_readable": true
+    },
+    {
+      "id": "arxiv-llms-in-requirements-engineering",
+      "url": "https://arxiv.org/abs/2310.13976",
+      "name": "Advancing Requirements Engineering through Generative AI: Assessing the Role of LLMs (arXiv 2310.13976)",
+      "tier": 3,
+      "layer": "ai-native",
+      "access": "open",
+      "status": "active",
+      "licence": "author-chosen licence on arXiv (not checked)",
+      "rationale": "Academic paper on using large language models in elicitation, analysis, specification and validation. Research, not practice: a lead, a lower tier than company documentation.",
+      "applies_to": [
+        "business-analyst"
+      ],
+      "free_parts": "abstract page and full-text link",
+      "next_check": "2026-11-16",
+      "perspective": "field",
+      "last_verified": {
+        "how": "fetched without credentials",
+        "date": "2026-10-16",
+        "bytes": 40618,
+        "http_status": 200,
+        "content_type": "text/html",
+        "text_verified": true
+      },
+      "pipeline_readable": true
+    }
+  ],
+  "uses_shared": [
+    "iiba-core-standard",
+    "iiba-cbap-handbook",
+    "scrum-guide",
+    "govuk-service-manual",
+    "atlassian-user-stories",
+    "amazon-culture-and-processes",
+    "fowler-user-story",
+    "cohn-user-stories",
+    "impact-mapping",
+    "nist-ai-rmf",
+    "nist-genai-profile",
+    "google-pair-guidebook",
+    "microsoft-hax-toolkit",
+    "openai-identifying-scaling-ai-use-cases",
+    "microsoft-learn-ai-hub",
+    "openai-academy",
+    "anthropic-academy",
+    "nvidia-dli",
+    "google-skills",
+    "databricks-governance-best-practices",
+    "snowflake-data-governance-best-practices",
+    "aws-creating-a-data-strategy",
+    "gcp-data-mesh-architecture",
+    "microsoft-caf-purview-governance-baselines",
+    "cloudflare-unified-data-platform"
+  ],
+  "checked_and_excluded": [
+    {
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "date": "2026-10-16",
+      "name": "IIBA BABOK Guide (online knowledge hub)",
+      "reason": "member-gated",
+      "result": "HTTP 401: login required"
+    },
+    {
+      "url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+      "date": "2026-10-16",
+      "name": "IIBA Business Analysis Standard (online knowledge hub)",
+      "reason": "member-gated",
+      "result": "HTTP 401: login required"
+    },
+    {
+      "url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/agile-extension/",
+      "date": "2026-10-16",
+      "name": "IIBA Agile Extension to the BABOK Guide",
+      "reason": "member-gated",
+      "result": "IIBA's page says login or membership is needed (earlier check this session)"
+    },
+    {
+      "url": "https://www.agilealliance.org/agile101/",
+      "date": "2026-10-16",
+      "name": "Agile Alliance: Agile 101",
+      "reason": "could not be opened; re-check by hand before listing",
+      "result": "HTTP 403 to the check tool (bot blocking)"
+    },
+    {
+      "url": "https://huggingface.co/learn",
+      "date": "2026-10-16",
+      "name": "Hugging Face Learn",
+      "reason": "dropped: not relevant to business analysis",
+      "result": "opens, but only a landing page"
+    },
+    {
+      "url": "https://www.thoughtworks.com/radar",
+      "date": "2026-10-16",
+      "name": "Thoughtworks Technology Radar",
+      "reason": "dropped: technology trends, weak fit for business analysis",
+      "result": "opens"
+    },
+    {
+      "url": "https://openai.com/business/guides-and-resources/identifying-and-scaling-ai-use-cases/",
+      "date": "2026-10-16",
+      "name": "OpenAI: Identifying and Scaling AI Use Cases (HTML page)",
+      "reason": "the PDF edition is listed instead",
+      "result": "HTTP 403 to the check tool (bot blocking)"
+    },
+    {
+      "url": null,
+      "date": "2026-10-16",
+      "name": "ISO/IEC/IEEE 29148, BABOK v3 book, PMI practice guides, Working Backwards (book), Business Analysis (BCS book)",
+      "reason": "excluded by the access rule",
+      "result": "paid or preview-only (not opened)"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/5530dddfe4b0679504639dc1/t/6773ae97cb4ccf79b34a711a/1735634600737/DAMA+Guide+1.pdf",
+      "date": "2026-10-16",
+      "name": "DAMA Guide to the DMBOK, First Edition (PDF)",
+      "reason": "removed by owner decision: an 18-year-old edition (preface November 2008) in a fast-moving field, not worth keeping even as a stand-in. No current free DAMA guide exists (DMBOK2 Revised Edition is sold as a book; DMBOK 3.0 has no released text found).",
+      "result": "opened and text read (176 pages)"
+    }
+  ]
+}

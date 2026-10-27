@@ -1,0 +1,58 @@
+appId: com.prateekvibhor.excerp
+---
+# The leaderboard's own states: empty when nobody has verified anything, "can't load" with a Retry when the server is unreachable,
+# and back to normal after Retry once the server answers. The test server's /e2e/leaderboard-down switch makes /leaderboard answer 503.
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- tapOn: "Profile"
+- scrollUntilVisible:
+    element: "Leaderboard"
+    timeout: 30000
+- tapOn: "Leaderboard"
+- extendedWaitUntil:
+    visible: "No verified readers yet"
+    timeout: 60000
+- assertNotVisible: "Couldn't load the leaderboard"
+# the server becomes unreachable, and the reader opens the board again
+- runScript:
+    file: ../../scripts/leaderboard-down.js
+    env:
+      LEADERBOARD_DOWN: "true"
+- assertTrue: ${output.downStatus == 200}
+- tapOn: "Back" # the board's own back pill, back to the Profile
+- extendedWaitUntil:
+    visible: "Leaderboard"
+    timeout: 30000
+- tapOn: "Leaderboard"
+- extendedWaitUntil:
+    visible: "Couldn't load the leaderboard"
+    timeout: 60000
+- assertVisible: "Retry"
+- assertNotVisible: "No verified readers yet"
+# still down: Retry fails again
+- tapOn: "Retry"
+- extendedWaitUntil:
+    visible: "Couldn't load the leaderboard"
+    timeout: 60000
+# the server answers again: Retry recovers
+- runScript:
+    file: ../../scripts/leaderboard-down.js
+    env:
+      LEADERBOARD_DOWN: "false"
+- assertTrue: ${output.downStatus == 200}
+- tapOn: "Retry"
+- extendedWaitUntil:
+    visible: "No verified readers yet"
+    timeout: 60000
+- assertNotVisible: "Couldn't load the leaderboard"

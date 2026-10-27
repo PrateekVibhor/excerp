@@ -1,0 +1,1186 @@
+{
+ "note": "Sources used by more than one role are listed here once. A role folder refers to them by id in uses_shared. Entries with status candidate_other_roles were verified open but are not used by business analyst; they are held for product manager and forward-deployed engineer.",
+ "sources": [
+  {
+   "id": "iiba-core-standard",
+   "name": "IIBA Core Standard (the Business Analysis Standard, PDF)",
+   "url": "https://www.iiba.org/globalassets/standards-and-resources/core-standard/iiba-core-standard.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "The International Institute of Business Analysis publishes the global standard for the profession; this PDF is its freely downloadable core. The BABOK Guide and the online Standard are member-gated and excluded.",
+   "licence": "terms stated in the document itself: \"Permission is granted by IIBA to reproduce this document for personal, professional, or educational use.\"",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 702294,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+     "pages": 50,
+     "characters_extracted": 81260,
+     "pages_with_text": 45
+    },
+    "reuse_terms": {
+     "quote": "Permission is granted by IIBA to reproduce this document for personal, professional, or educational use.",
+     "where": "copyright page; also \"© 2017 International Institute of Business Analysis. All rights reserved.\""
+    },
+    "quotable": "yes: permission to reproduce for personal, professional or educational use is stated",
+    "note": "The document is titled \"IIBA Global Business Analysis Core Standard\", © 2017."
+   },
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "iiba-cbap-handbook",
+   "name": "IIBA CBAP Certification Handbook (PDF)",
+   "url": "https://www.iiba.org/globalassets/certification/cbap/files/cbap-handbook.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The certifying body's own statement of what a senior business analyst must know and do (competencies, knowledge areas, exam outline).",
+   "licence": "no reuse terms stated in the document itself; © held by the publisher",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 751219,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+     "pages": 17,
+     "characters_extracted": 31046,
+     "pages_with_text": 16
+    },
+    "reuse_terms": {
+     "quote": null,
+     "where": "the only rights line in the document is \"© 2026 International Institute of Business Analysis.\" on each page; no reuse terms"
+    },
+    "quotable": "readable; no reuse terms stated, so brief attributed quotation only",
+    "note": "May 2026 edition. Mostly application, fee and exam logistics; the competency outline is a small part."
+   },
+   "next_check": "2026-11-16",
+   "status": "active",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). Owner reasoning, 2026-10-16: the document states no reuse terms, so it stays active as an attributed-citation source; this is how a textbook or course cites a standard it does not own. Deliberate, not an oversight.",
+   "citation_policy": "attributed_citation_only",
+   "applies_to_note": "product-manager and forward-deployed-engineer removed 2026-10-16: a business-analysis certification handbook (mostly application and exam logistics), a weak fit outside business analysis."
+  },
+  {
+   "id": "scrum-guide",
+   "name": "The Scrum Guide",
+   "url": "https://scrumguides.org/scrum-guide.html",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "The framework's definition by its authors; sets the Product Owner and Product Backlog accountabilities business analysts work with. Real teams vary it, which is expected.",
+   "licence": "CC BY-SA 4.0 (from knowledge; not re-checked on the page)",
+   "free_parts": "whole guide",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 34943,
+    "text_verified": true
+   },
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "govuk-service-manual",
+   "name": "GOV.UK Service Manual",
+   "url": "https://www.gov.uk/service-manual",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "The UK government's published method for user needs, user research and agile delivery of services, used by its own delivery teams.",
+   "licence": "Open Government Licence v3.0 (from knowledge; not re-checked on the page)",
+   "free_parts": "whole site",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 60426,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). The licence recorded here comes from knowledge and was not checked on the page, so it is treated as unconfirmed until it is.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "atlassian-user-stories",
+   "name": "Atlassian: User Stories with examples and a template",
+   "url": "https://www.atlassian.com/agile/project-management/user-stories",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "A tooling company's own guide to writing user stories and acceptance criteria as its customers' teams use them.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 2220819,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "amazon-culture-and-processes",
+   "name": "Amazon: what it's like to work at Amazon (culture and processes, including Working Backwards and narrative memos)",
+   "url": "https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Amazon's own description of Working Backwards and its written-narrative practice. The Working Backwards book is paid and excluded.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 214048,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "fowler-user-story",
+   "name": "Martin Fowler: User Story",
+   "url": "https://martinfowler.com/bliki/UserStory.html",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Individual practitioner (Thoughtworks chief scientist, co-author of the Agile Manifesto) whose bliki is widely cited by working teams.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 15197,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "cohn-user-stories",
+   "name": "Mike Cohn (Mountain Goat Software): User Stories",
+   "url": "https://www.mountaingoatsoftware.com/agile/user-stories",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Individual practitioner whose user-story writing is referenced across the agile community; the page is a free article, his books are paid and excluded.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 149168,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "impact-mapping",
+   "name": "Gojko Adzic: Impact Mapping",
+   "url": "https://www.impactmapping.org/",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Individual practitioner's free site on linking deliverables to business goals, a technique business analysts use to frame scope.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole site",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 11540,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "nist-ai-rmf",
+   "name": "NIST AI Risk Management Framework",
+   "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+   "layer": "ai-native",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "The US standards body's framework for trustworthy AI: what an analyst must ask for when requirements involve AI.",
+   "licence": "US government work, free to use (from knowledge; not re-checked on the page)",
+   "free_parts": "framework page, playbook and roadmap links",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 93808,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). The licence recorded here comes from knowledge and was not checked on the page, so it is treated as unconfirmed until it is.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "nist-genai-profile",
+   "name": "NIST AI 600-1: Generative AI Profile (PDF)",
+   "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+   "layer": "ai-native",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "NIST's catalogue of generative-AI risks and suggested actions, for requirements and acceptance criteria on AI features.",
+   "licence": "no reuse terms stated in the document itself; © held by the publisher",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1174643,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+     "pages": 64,
+     "characters_extracted": 160494,
+     "pages_with_text": 64
+    },
+    "reuse_terms": {
+     "quote": null,
+     "where": "the document only has the heading \"Copyright, Use, and Licensing Statements\" with no statement under it; no reuse terms in the text"
+    },
+    "quotable": "readable; no reuse terms stated in the document (NIST publications are US government works, from knowledge, not stated in the file)",
+    "note": "Version dated 2024-07-25 (Editorial Review Board approval)."
+   },
+   "next_check": "2026-11-16",
+   "status": "active",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). Owner reasoning, 2026-10-16: the document states no reuse terms, so it stays active as an attributed-citation source; this is how a textbook or course cites a standard it does not own. Deliberate, not an oversight.",
+   "citation_policy": "attributed_citation_only"
+  },
+  {
+   "id": "google-pair-guidebook",
+   "name": "Google PAIR People + AI Guidebook",
+   "url": "https://pair.withgoogle.com/guidebook-v2/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Google's published patterns for designing AI products, starting from user needs and defining success.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "guidebook pages",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 205486,
+    "text_verified": true,
+    "note": "Only the landing page was read; the chapter pages were not individually opened."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "microsoft-hax-toolkit",
+   "name": "Microsoft HAX Toolkit (Guidelines for Human-AI Interaction)",
+   "url": "https://www.microsoft.com/en-us/haxtoolkit/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "Microsoft's 18 tested guidelines for human-AI interaction, a checklist for requirements on AI behaviour and failure handling.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "toolkit pages",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 137929,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "openai-identifying-scaling-ai-use-cases",
+   "name": "OpenAI: Identifying and Scaling AI Use Cases (PDF)",
+   "url": "https://cdn.openai.com/business-guides-and-resources/identifying-and-scaling-ai-use-cases.pdf",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager"
+   ],
+   "rationale": "OpenAI's own guide to finding and prioritising AI use cases, written for business teams; directly business-analysis work.",
+   "licence": "no reuse terms stated in the document itself; © held by the publisher",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 6155553,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+     "pages": 34,
+     "characters_extracted": 27100,
+     "pages_with_text": 32
+    },
+    "reuse_terms": {
+     "quote": null,
+     "where": "no copyright line or reuse terms found anywhere in the extracted text"
+    },
+    "quotable": "readable; no reuse terms stated, so brief attributed quotation only",
+    "note": "Marketing-style guide with no stated terms or date."
+   },
+   "next_check": "2026-11-16",
+   "status": "active",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). Owner reasoning, 2026-10-16: the document states no reuse terms, so it stays active as an attributed-citation source; this is how a textbook or course cites a standard it does not own. Deliberate, not an oversight.",
+   "citation_policy": "attributed_citation_only"
+  },
+  {
+   "id": "microsoft-learn-ai-hub",
+   "name": "Microsoft Learn: AI learning hub",
+   "url": "https://learn.microsoft.com/en-us/ai/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "Microsoft's free, public learning paths on AI for business and technical roles; reading needs no account.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "learning hub and path pages",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 52601,
+    "text_verified": true,
+    "note": "Hub page read; individual modules were not opened. Progress tracking needs an account, reading does not."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "openai-academy",
+   "name": "OpenAI Academy",
+   "url": "https://academy.openai.com/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "OpenAI's free learning hub with guides, videos and courses.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "content hub",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 816544,
+    "text_verified": true,
+    "note": "The hub and its catalogue load without signing in. Individual course and resource pages were not opened; some community features need a free account (from a search result, not tested). Each item should pass the open test in the next cycle."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "anthropic-academy",
+   "name": "Anthropic Academy",
+   "url": "https://anthropic.skilljar.com/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "free_account",
+   "perspective": "field",
+   "pipeline_readable": false,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "Anthropic's free self-paced courses on Claude and AI fluency. Catalogue is public; the lessons need a free sign-up (email).",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "course catalogue and course overview pages; lessons need a free registration",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "opened a real lesson URL (claude-101/383389) without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 1266907,
+    "text_verified": true,
+    "access_observed": "the lesson URL answered 302 to the course page (?next=/claude-101/383389); that page shows \"Register | FREE  Already registered? Sign In\". Lessons need a free account."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified. Cited with the label \"Needs a free account\" and never fetched by the pipeline, so no text is quoted from it.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "nvidia-dli",
+   "name": "NVIDIA Deep Learning Institute self-paced courses",
+   "url": "https://learn.nvidia.com/en-us/training/self-paced-courses",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "free_account",
+   "perspective": "field",
+   "pipeline_readable": false,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "NVIDIA's free self-paced technical courses. Catalogue is public; courses need a free NVIDIA account.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "course catalogue only",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "opened the catalogue and the free-courses page without credentials; no lesson page could be reached",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 406449,
+    "text_verified": true,
+    "access_confirmed": false,
+    "access_observed": "The catalogue is rendered by script, and a plain fetch finds no course links; a guessed course-detail URL returns a script shell with no content, and the resources.nvidia.com course landing page redirected to the NVIDIA homepage. The only login seen is the my-learning link to learn.nvidia.com/join. NVIDIA's catalogue PDF lists courses as \"Free\". A lesson was NOT opened, so free_account is carried from search results and the page's own wording, not observed."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified. Cited with the label \"Needs a free account\" and never fetched by the pipeline, so no text is quoted from it.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "google-skills",
+   "name": "Google Skills",
+   "url": "https://www.skills.google/",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "free_account",
+   "perspective": "field",
+   "pipeline_readable": false,
+   "applies_to": [
+    "business-analyst",
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "Google's learning platform for AI and cloud skills; many courses are free.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "catalogue, path and course overview pages; lessons need a sign-in",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "opened real lesson URLs (course_templates/536/video/645344 and /documents/645357) without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 24062,
+    "text_verified": true,
+    "access_observed": "both lesson URLs redirected to /users/sign_in (\"Sign in with Google or Create account\", email and password). Overview pages (course_templates/536, paths/118) open with a visible \"Sign in or join\". Whether the lessons are free of charge after signing in was not observed."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified. Cited with the label \"Needs a free account\" and never fetched by the pipeline, so no text is quoted from it.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "openai-practical-guide-to-agents",
+   "name": "OpenAI: A Practical Guide to Building Agents (PDF)",
+   "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "OpenAI's own guide to agent design and guardrails.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read (pypdf)",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 7335065,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0",
+     "pages": 34,
+     "characters_extracted": 29970,
+     "pages_with_text": 31
+    },
+    "reuse_terms": {
+     "quote": null,
+     "where": "no copyright line or reuse terms found in the extracted text"
+    },
+    "quotable": "readable; no reuse terms stated, so brief attributed quotation only",
+    "note": "Text read in full. Earlier note about only 300 machine-readable words no longer applies."
+   },
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "anthropic-building-effective-agents",
+   "name": "Anthropic: Building effective agents",
+   "url": "https://www.anthropic.com/engineering/building-effective-agents",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "rationale": "Anthropic's engineering write-up of agent patterns from its customer work.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 175690,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "databricks-governance-best-practices",
+   "name": "Databricks: Best practices for data and AI governance (documentation)",
+   "url": "https://docs.databricks.com/aws/en/lakehouse-architecture/data-governance/best-practices",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (data governance and data management practice). Product manager not listed because none of these is about product work; revisit per role.",
+   "rationale": "Databricks' own documented practices for governing data: ownership, access by groups, catalogs, quality, metadata. Vendor-authored, so it describes its own platform's way.",
+   "licence": "© Databricks 2026. All rights reserved. (page footer; Terms of Use linked, not read)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 46042,
+    "text_verified": true,
+    "text_chars_read": 18064,
+    "login_wall": false,
+    "note": "Page says \"Last updated on Sep 11, 2026\". This is the AWS edition of the docs; the same page exists for other clouds."
+   },
+   "quotable": "short attributed quotes only; no reuse terms beyond the © line",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "snowflake-data-governance-best-practices",
+   "name": "Snowflake: Data Governance Best Practices & Principles",
+   "url": "https://www.snowflake.com/en/data-governance/strategy/best-practices/",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (data governance and data management practice). Product manager not listed because none of these is about product work; revisit per role.",
+   "rationale": "Snowflake's published practices for data governance: ownership and stewardship, domain quality standards, access control, classification, metrics. Vendor-authored and marketing-adjacent.",
+   "licence": "© 2026 Snowflake Inc. All Rights Reserved. (page footer; Site Terms linked, not read)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 550105,
+    "text_verified": true,
+    "text_chars_read": 12016,
+    "login_wall": false,
+    "note": "Page metadata gives datePublished 2026-03-18. The page body is server-rendered (about 12,000 characters); \"Sign in\" appears only in site navigation."
+   },
+   "quotable": "short attributed quotes only; no reuse terms beyond the © line",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "aws-creating-a-data-strategy",
+   "name": "AWS Prescriptive Guidance: Creating a data strategy on AWS that supports your company's goals (PDF)",
+   "url": "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-aws-data/strategy-aws-data.pdf",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (data governance and data management practice). Product manager not listed because none of these is about product work; revisit per role.",
+   "rationale": "AWS's guide to building a data strategy, including governance, standardisation, classification and quality, by two AWS authors. Vendor-authored.",
+   "licence": "\"Copyright © 2026 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.\" (document copyright page; no reuse terms)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 827152,
+    "text_verified": true,
+    "text_chars_read": 33245,
+    "login_wall": false,
+    "note": "25 pages, 23 with text, not encrypted. The HTML edition (docs.aws.amazon.com/.../strategy-aws-data/framework.html) redirected to a script-only landing page in a plain fetch, so the PDF is the readable form."
+   },
+   "quotable": "short attributed quotes only; no reuse terms beyond the copyright line",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "gcp-data-mesh-architecture",
+   "name": "Google Cloud Architecture Center: Architecture and functions in a data mesh",
+   "url": "https://docs.cloud.google.com/architecture/data-mesh",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (data governance and data management practice). Product manager not listed because none of these is about product work; revisit per role.",
+   "rationale": "Google Cloud's reference architecture for a data mesh, with the roles (data owner, steward, governance team) and policies that data management relies on. Vendor-authored.",
+   "licence": "\"Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License.\" (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 273766,
+    "text_verified": true,
+    "text_chars_read": 29825,
+    "login_wall": false,
+    "note": "Page says \"Last reviewed 2024-09-03\" so it is two years old; check currency at the monthly cycle. Same page shows the CC BY 4.0 footer."
+   },
+   "quotable": "yes: CC BY 4.0, quote with attribution",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "microsoft-caf-purview-governance-baselines",
+   "name": "Microsoft Cloud Adoption Framework: Data governance and security baselines with Microsoft Purview",
+   "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/governance-security-baselines-purview-data-estate-unify-data-platform",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (data governance and data management practice). Product manager not listed because none of these is about product work; revisit per role.",
+   "rationale": "Microsoft's published guidance on classifying data, setting retention, ownership, lineage and automated enforcement. Vendor-authored and tied to Purview.",
+   "licence": "© Microsoft 2026 (page footer; Terms of Use linked, not read). No content licence stated on the page.",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 75825,
+    "text_verified": true,
+    "text_chars_read": 18269,
+    "login_wall": false,
+    "note": "Page says \"Last updated on 2026-10-01\". The static HTML carries a generic \"Access to this page requires authorization\" template line, but the full article text is present with no login. The older URL .../scenarios/cloud-scale-analytics/govern redirects to a different page (executive-strategy-unify-data-platform)."
+   },
+   "quotable": "short attributed quotes only; no content licence stated on the page",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "cloudflare-unified-data-platform",
+   "name": "Cloudflare Blog: How we built Cloudflare's data platform and an AI agent on top of it",
+   "url": "https://blog.cloudflare.com/our-unified-data-platform/",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst",
+    "data-analyst",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content (governance, catalog, access control, data quality). Product manager left out as before.",
+   "rationale": "Cloudflare's first-hand account of its own data platform: a lakehouse, a data catalog, default-closed governance, access control tied to the data model. Vendor-authored, describes one company's design.",
+   "licence": "© 2026 Cloudflare, Inc. (page footer; Terms of use linked, not read). No content licence stated.",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 316502,
+    "text_verified": true,
+    "text_chars_read": 30264,
+    "login_wall": false,
+    "note": "Page metadata: published 2026-05-28, modified 2026-07-15. The text is long and technical (Trino, DataHub, an AI agent); the governance and catalog sections are the part relevant to analysis work."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated on the page",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "nebius-choosing-storage-for-deep-learning",
+   "name": "Nebius: Choosing storage for deep learning: a comprehensive guide",
+   "url": "https://nebius.com/blog/posts/choosing-storage-for-deep-learning",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content: ML infrastructure and storage engineering. Not about requirements, analysis or reporting, so not listed for business analyst or data analyst, and not in business analyst's uses_shared.",
+   "rationale": "Nebius's guide to matching storage to each stage of deep learning (data preparation, streaming, checkpointing, fine-tuning, inference), drawing on its and its customers' experience. Vendor-authored.",
+   "licence": "© 2026 Nebius B.V. (page footer; Terms of use linked, not read). No content licence stated.",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 259324,
+    "text_verified": true,
+    "text_chars_read": 15245,
+    "login_wall": false,
+    "note": "Page metadata: published 2024-08-15, modified 2024-12-12, so it is two years old; check currency at the monthly cycle."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated on the page",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "pragmatic-framework-page",
+   "name": "Pragmatic Institute: The Pragmatic Framework (framework page)",
+   "url": "https://www.pragmaticinstitute.com/product/framework/",
+   "layer": "institutional",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "forward-deployed-engineer removed 2026-10-16: product management practice, not forward-deployed engineering (the proposal's overlap table listed it; the page content does not fit).",
+   "rationale": "Pragmatic Institute's own 37-box framework of product management activities. The proposal lists it as institutional; tier 2 here because it is one training company's framework, not a standards body.",
+   "licence": "© 2026 Pragmatic Institute. All rights reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 295576,
+    "text_verified": true,
+    "text_chars_read": 10566,
+    "note": "Page metadata: published 2025-04-15, modified 2026-09-09. The URL .../product/framework/launch redirected here. The page text (framework boxes) is open; the ebook is on a form (see pragmatic-framework-ebook)."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "pragmatic-framework-ebook",
+   "name": "Pragmatic Institute: The Pragmatic Framework ebook",
+   "url": "https://www.pragmaticinstitute.com/product/framework/",
+   "layer": "institutional",
+   "tier": 2,
+   "access": "free_account",
+   "perspective": "field",
+   "pipeline_readable": false,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "forward-deployed-engineer removed 2026-10-16: product management practice, not forward-deployed engineering (the proposal's overlap table listed it; the page content does not fit).",
+   "rationale": "The detailed explanation of the framework, offered as a download.",
+   "licence": "© 2026 Pragmatic Institute. All rights reserved. (page footer)",
+   "free_parts": "the framework page is open; the ebook needs an email form",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "opened the framework page without credentials; the ebook sits behind a form that was not submitted",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 295576,
+    "text_verified": false,
+    "note": "The page says: \"Fill out the form below to download our ebook for a detailed explanation of the Framework's key concepts.\" The ebook itself was not opened, so its text and terms are unknown. Cited with the label \"Needs a free account\" (an email form); never fetched by the pipeline."
+   },
+   "quotable": "unknown: the ebook was not opened",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "svpg-empowered-product-teams",
+   "name": "SVPG (Marty Cagan): Empowered Product Teams",
+   "url": "https://www.svpg.com/empowered-product-teams/",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "forward-deployed-engineer removed 2026-10-16: product management practice, not forward-deployed engineering (the proposal's overlap table listed it; the page content does not fit).",
+   "rationale": "Individual practitioner (founder of Silicon Valley Product Group) whose product-team model is widely cited; his books are paid and excluded.",
+   "licence": "© 2026 SVPG. All Rights Reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 95315,
+    "text_verified": true,
+    "text_chars_read": 22745,
+    "note": "Page metadata: published 2018-10-31, modified 2023-08-27."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "svpg-product-discovery",
+   "name": "SVPG (Marty Cagan): Product Discovery",
+   "url": "https://www.svpg.com/product-discovery/",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "From the proposal's overlap table and the page content; revisit per role.",
+   "rationale": "SVPG's own description of product discovery (value, usability, feasibility, viability risks).",
+   "licence": "© 2026 SVPG. All Rights Reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 71552,
+    "text_verified": true,
+    "text_chars_read": 7572,
+    "note": "Page metadata: published 2007-09-24, modified 2025-03-06."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "svpg-product-management-start-here",
+   "name": "SVPG (Marty Cagan): Product Management - Start Here",
+   "url": "https://www.svpg.com/product-management-start-here/",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "forward-deployed-engineer removed 2026-10-16: product management practice, not forward-deployed engineering (the proposal's overlap table listed it; the page content does not fit).",
+   "rationale": "SVPG's own starting page on the product manager role in empowered teams.",
+   "licence": "© 2026 SVPG. All Rights Reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 80480,
+    "text_verified": true,
+    "text_chars_read": 9691,
+    "note": "Page metadata: published 2020-06-11, modified 2025-10-06."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "anthropic-demystifying-evals",
+   "name": "Anthropic: Demystifying evals for AI agents",
+   "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "From the proposal's overlap table and the page content; revisit per role.",
+   "rationale": "Anthropic's engineering write-up on how to evaluate AI agents, from its customer and internal work.",
+   "licence": "© 2026 Anthropic PBC (page footer); no reuse terms stated",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 268736,
+    "text_verified": true,
+    "text_chars_read": 39888,
+    "note": "Page metadata: published 2026-01-09, modified 2026-03-18."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "openai-evaluation-best-practices",
+   "name": "OpenAI: Evaluation best practices (API guide)",
+   "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
+   "layer": "ai-native",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "From the proposal's overlap table and the page content; revisit per role.",
+   "rationale": "OpenAI's guide to evaluating LLM applications: early and frequent evals, task-specific tests, human calibration.",
+   "licence": "no copyright or reuse statement found on the page",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 444949,
+    "text_verified": true,
+    "text_chars_read": 20127,
+    "note": "No date on the page. The page carries a notice that OpenAI is deprecating the Evals platform (a search reported read-only on 2026-10-31 and shutdown on 2026-11-30; not confirmed on OpenAI's deprecations page). This guide is general practice, but the tooling links will go stale; re-check at the next cycle."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "hamel-ai-evals",
+   "name": "Hamel Husain: AI Evals: Everything You Need to Know",
+   "url": "https://hamel.dev/blog/posts/evals-faq/",
+   "layer": "ai-native",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager",
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "From the proposal's overlap table and the page content; revisit per role.",
+   "rationale": "Practitioner write-up (with Shreya Shankar's work cited) widely used by teams building AI products; long, question-and-answer format.",
+   "licence": "no copyright or reuse statement found on the page",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 249295,
+    "text_verified": true,
+    "text_chars_read": 113536,
+    "note": "Page metadata: published 2026-09-18, modified 2026-09-21. It promotes a paid course with a discount code; that course is not listed."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  }
+ ]
+}

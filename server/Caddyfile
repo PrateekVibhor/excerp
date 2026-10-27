@@ -1,0 +1,5 @@
+# HTTPS in front of the API. Caddy asks Let's Encrypt for a certificate for this name on first start
+# (the name must already point at this VM and ports 80 and 443 must be open) and renews it by itself.
+YOUR-API-HOST {
+	reverse_proxy api:8080
+}

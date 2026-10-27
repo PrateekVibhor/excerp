@@ -1,0 +1,22 @@
+appId: com.prateekvibhor.excerp
+---
+# An approved reader signs in and reaches the Feed.
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- assertNotVisible: "Feed"
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Welcome to Excerp"
+- assertVisible: "9 NEW"
+- assertVisible: "Feed"
+- assertVisible: "Reading List"
+- assertVisible: "Profile"

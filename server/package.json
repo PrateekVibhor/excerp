@@ -1,0 +1,36 @@
+{
+  "name": "swipy-server",
+  "private": true,
+  "type": "module",
+  "description": "Swipy AI pipeline: Tavily discovery, Nemotron summaries on Nebius, and a read-only feed API.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "api": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/api.ts",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"src/**/*.test.ts\" \"e2e/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "pipeline": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/pipeline.ts",
+    "moderate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/moderate.ts",
+    "allow": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/allowList.ts",
+    "backfill": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/backfillQuiz.ts",
+    "worker": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/worker.ts",
+    "e2e:server": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON e2e/server.ts",
+    "demo:lists": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON e2e/listDemo.ts",
+    "demo:real": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env e2e/realRun.ts",
+    "seed:reference": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON src/courses/seedReference.ts",
+    "course:worker": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env src/courseWorker.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "fastify": "^5.12.5",
+    "google-auth-library": "^11.2.0",
+    "pg": "^8.23.1",
+    "unpdf": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  }
+}

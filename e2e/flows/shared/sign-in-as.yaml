@@ -1,0 +1,9 @@
+appId: com.prateekvibhor.excerp
+---
+# Taps "Sign in with Google", then the test reader named by READER (the stand-in's button label), e.g.
+#   runFlow: { file: ../shared/sign-in-as.yaml, env: { READER: "Test reader: approved" } }
+- tapOn: "Sign in with Google"
+- extendedWaitUntil:
+    visible: "Choose an account"
+    timeout: 10000
+- tapOn: ${READER}

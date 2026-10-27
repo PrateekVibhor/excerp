@@ -1,0 +1,54 @@
+appId: com.prateekvibhor.excerp
+---
+# Against the list demo server (npm run demo:lists, six seeded Skills lists, fake data, no credits; see e2e/README.md). The tabs run Feed, Reading List, Skills list, Profile.
+# The Skills list tab opens the reader's most recent list, a ready one, and its menu has no "Cancel build".
+- runFlow: ../shared/reset-demo.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+# the order, left to right. The Skills list tab's name carries ", New coverage" while the reader has a new-coverage dot (the demo reader does), so it is matched as "Skills list.*".
+- assertVisible:
+    text: "Reading List"
+    rightOf: "Feed"
+- assertVisible:
+    text: "Skills list.*"
+    rightOf: "Reading List"
+- assertVisible:
+    text: "Profile"
+    rightOf: "Skills list.*"
+- assertNotVisible:
+    text: "Profile"
+    leftOf: "Skills list.*"
+- assertNotVisible:
+    text: "Skills list.*"
+    rightOf: "Profile"
+# the tab opens the most recently used list, which is ready
+- tapOn: "Skills list.*"
+- extendedWaitUntil:
+    visible: "Treasury systems role"
+    timeout: 60000
+- scrollUntilVisible:
+    element: "Requirements elicitation.*"
+    timeout: 30000
+- assertNotVisible: "Building your list"
+# its menu: no Cancel build, and the bottom item is Close
+- tapOn: "List options"
+- extendedWaitUntil:
+    visible: "Rename"
+    timeout: 15000
+- assertVisible: "Delete"
+- assertVisible: "Close"
+- assertNotVisible: "Cancel build"
+- tapOn: "Close"
+- extendedWaitUntil:
+    notVisible: "Rename"
+    timeout: 15000

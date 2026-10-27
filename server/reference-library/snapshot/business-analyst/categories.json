@@ -1,0 +1,583 @@
+{
+  "role": "business analyst",
+  "note": "Transferable skill categories that business analyst job-posting phrases map to. A category names a skill, never a product: tools are listed below and point at the skill they are used for. Seeded from the IIBA BABOK knowledge areas and the 36 concepts of the first business analyst course; new categories are proposed from real postings.",
+  "categories": [
+    {
+      "id": "business-analysis-practice",
+      "name": "Business analysis practice",
+      "description": "the discipline itself: business analysis methods, planning the analysis work, BABOK-style techniques, being the link between business and delivery",
+      "aliases": [
+        "business analysis",
+        "business analyst methodologies",
+        "babok"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "stakeholder-management",
+      "name": "Stakeholder management",
+      "description": "identifying, engaging and communicating with stakeholders, managing expectations and relationships",
+      "aliases": [
+        "stakeholder management",
+        "stakeholder engagement",
+        "stakeholder communication",
+        "stakeholder collaboration",
+        "stakeholder relationships"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "requirements-elicitation",
+      "name": "Requirements elicitation",
+      "description": "finding out what the business needs: interviews, workshops, observation, surveys, gathering requirements",
+      "aliases": [
+        "requirements gathering",
+        "requirement gathering",
+        "elicitation",
+        "elicit requirements",
+        "requirements workshops"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "requirements-analysis-documentation",
+      "name": "Requirements analysis and documentation",
+      "description": "analysing, specifying and documenting requirements: user stories, business and functional requirements, specifications, traceability, process and solution documentation",
+      "aliases": [
+        "requirements analysis",
+        "requirement analysis",
+        "requirements documentation",
+        "requirement documentation",
+        "requirements traceability",
+        "user stories",
+        "functional specifications",
+        "functional specification writing",
+        "technical specification writing",
+        "brd",
+        "frd",
+        "documentation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "process-modeling-improvement",
+      "name": "Process modeling and improvement",
+      "description": "mapping current and future-state processes (flowcharts, BPMN), analysing them and proposing process or system improvements",
+      "aliases": [
+        "process mapping",
+        "process modeling",
+        "process modelling",
+        "process analysis",
+        "workflow modeling",
+        "bpmn",
+        "process improvement",
+        "flowcharts"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "root-cause-problem-solving",
+      "name": "Root cause analysis and problem solving",
+      "description": "finding the cause of problems and issues, critical and analytical thinking, troubleshooting, diagnosing data or system issues",
+      "aliases": [
+        "root cause analysis",
+        "root cause",
+        "problem solving",
+        "critical thinking",
+        "analytical thinking",
+        "troubleshooting"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "data-analysis",
+      "name": "Data analysis and statistics",
+      "description": "analysing data to support decisions: statistical analysis, forecasting, hypothesis testing, quantitative and analytical modelling",
+      "aliases": [
+        "data analysis",
+        "statistical analysis",
+        "statistical modeling",
+        "quantitative analysis",
+        "forecasting",
+        "hypothesis testing",
+        "analytical modeling"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sql-data-querying",
+      "name": "SQL and data querying",
+      "description": "writing queries to read and shape data in relational databases",
+      "aliases": [
+        "sql",
+        "database queries",
+        "querying data",
+        "data querying"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "data-mapping-integration",
+      "name": "Data mapping and integration",
+      "description": "source-to-target mappings, data migration and integration requirements, data definitions and lineage",
+      "aliases": [
+        "source-to-target",
+        "data mapping",
+        "data migration",
+        "etl",
+        "data lineage",
+        "data dictionary"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "reporting-kpis-dashboards",
+      "name": "Reporting, KPIs and dashboards",
+      "description": "defining and maintaining KPIs and recurring reports, building dashboards and data visualisations",
+      "aliases": [
+        "kpi",
+        "kpis",
+        "dashboards",
+        "recurring reports",
+        "reporting",
+        "data visualization",
+        "data visualisation",
+        "bi tools",
+        "business intelligence"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "spreadsheet-analysis",
+      "name": "Spreadsheet analysis",
+      "description": "analysis and modelling in spreadsheets: formulas, pivot tables, lookups",
+      "aliases": [
+        "spreadsheet",
+        "spreadsheets",
+        "pivot tables",
+        "vlookup"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "testing-uat",
+      "name": "Testing and user acceptance",
+      "description": "test cases and scenarios, user acceptance testing, regression testing, defect tracking and resolution, QA",
+      "aliases": [
+        "user acceptance testing",
+        "uat",
+        "test cases",
+        "test case",
+        "test scenarios",
+        "regression testing",
+        "qa testing",
+        "quality assurance",
+        "defect resolution",
+        "bug troubleshooting"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "change-management",
+      "name": "Change management and adoption",
+      "description": "change control and change requests, organisational change, user training and adoption",
+      "aliases": [
+        "change management",
+        "change control",
+        "change request",
+        "change requests",
+        "user adoption",
+        "user training"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "agile-delivery",
+      "name": "Agile delivery and backlog management",
+      "description": "agile and scrum ways of working, backlog and sprint management, product ownership at team level",
+      "aliases": [
+        "agile",
+        "scrum",
+        "kanban",
+        "backlog",
+        "sprint planning",
+        "sprint"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "project-coordination",
+      "name": "Project coordination and reporting",
+      "description": "tracking project status, timelines and tasks, reporting progress, coordinating delivery across teams",
+      "aliases": [
+        "project management",
+        "project coordination",
+        "project execution",
+        "project status",
+        "status reporting",
+        "project timelines"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prioritization-tradeoffs",
+      "name": "Prioritization and trade-offs",
+      "description": "prioritising work and requirements, weighing trade-offs, recommending execution paths",
+      "aliases": [
+        "prioritization",
+        "prioritisation",
+        "prioritize",
+        "prioritise",
+        "tradeoff",
+        "trade-off",
+        "tradeoffs",
+        "trade-offs",
+        "priority management"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "communication-presentation",
+      "name": "Communication and presentation",
+      "description": "written and verbal communication, presenting findings, demonstrating solutions and building slide decks",
+      "aliases": [
+        "communication skills",
+        "written communication",
+        "verbal communication",
+        "presentation skills",
+        "present findings",
+        "presenting"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "collaboration-teamwork",
+      "name": "Cross-functional collaboration",
+      "description": "working across teams and functions, teamwork, collaborating with technical and business groups",
+      "aliases": [
+        "cross-functional",
+        "cross functional",
+        "teamwork",
+        "team collaboration",
+        "collaboration"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "enterprise-systems-analysis",
+      "name": "Enterprise systems analysis",
+      "description": "analysing, configuring, testing, upgrading and supporting business systems such as ERP, HR, finance, student and lending platforms",
+      "aliases": [
+        "erp",
+        "enterprise systems",
+        "system upgrades",
+        "system configuration",
+        "systems analysis"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "compliance-controls",
+      "name": "Compliance, controls and risk",
+      "description": "regulatory compliance, internal controls, audit support, risk and governance requirements",
+      "aliases": [
+        "compliance",
+        "internal controls",
+        "sox",
+        "audit",
+        "regulatory",
+        "risk management",
+        "governance"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "business-case-financial-analysis",
+      "name": "Business case and financial analysis",
+      "description": "costing, pricing and credit/market analysis, ROI and business cases that support funding and pricing decisions",
+      "aliases": [
+        "business case",
+        "cost benefit",
+        "cost-benefit",
+        "roi",
+        "financial analysis",
+        "pricing analysis",
+        "credit analysis"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "ai-assisted-analysis",
+      "name": "AI-assisted analysis",
+      "description": "using AI tools in analysis work: prompting, checking AI output, summarising and drafting with AI, understanding AI features and their limits",
+      "aliases": [
+        "generative ai",
+        "prompt engineering",
+        "prompting",
+        "ai-assisted",
+        "ai assisted",
+        "llm",
+        "llms",
+        "copilot"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "domain-knowledge",
+      "name": "Industry and domain knowledge",
+      "description": "knowing the industry or business function the work sits in, with its rules, vocabulary and standards: healthcare billing and coding, banking and credit, insurance claims, revenue cycle, sector regulation, and functional domains such as treasury and cash management, payments and payment standards (ISO 20022), and HR functions (compensation and benefits, talent and performance management, offboarding)",
+      "aliases": [
+        "industry knowledge",
+        "domain knowledge",
+        "healthcare industry",
+        "revenue cycle",
+        "claims processing",
+        "medicaid",
+        "icd-10",
+        "cpt coding",
+        "iso 20022",
+        "treasury",
+        "cash management",
+        "payment systems",
+        "payments",
+        "compensation and benefits",
+        "talent management",
+        "performance management",
+        "offboarding",
+        "human resources"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "programming-scripting",
+      "name": "Programming and scripting for analysis",
+      "description": "writing code in a scripting or general-purpose language to clean, analyse, automate and report on data: Python, R, Visual Basic (VBA) and general programming for analysis work. Not platform or infrastructure engineering (big-data platforms, operating systems, directory services) and not building software products",
+      "aliases": [
+        "python",
+        "r programming",
+        "vba",
+        "visual basic",
+        "scripting",
+        "programming",
+        "write scripts"
+      ],
+      "status": "active"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Workday",
+      "aliases": [
+        "workday"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "Oracle",
+      "aliases": [
+        "oracle",
+        "oracle ebs",
+        "oracle fusion",
+        "peoplesoft",
+        "netsuite"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "SAP",
+      "aliases": [
+        "sap",
+        "s/4hana"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "Ellucian Colleague",
+      "aliases": [
+        "ellucian",
+        "ellucian colleague"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "Salesforce",
+      "aliases": [
+        "salesforce"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "ServiceNow",
+      "aliases": [
+        "servicenow"
+      ],
+      "category": "enterprise-systems-analysis"
+    },
+    {
+      "name": "Jira",
+      "aliases": [
+        "jira"
+      ],
+      "category": "agile-delivery"
+    },
+    {
+      "name": "Confluence",
+      "aliases": [
+        "confluence"
+      ],
+      "category": "requirements-analysis-documentation"
+    },
+    {
+      "name": "Excel",
+      "aliases": [
+        "excel",
+        "microsoft excel"
+      ],
+      "category": "spreadsheet-analysis"
+    },
+    {
+      "name": "PowerPoint",
+      "aliases": [
+        "powerpoint",
+        "power point"
+      ],
+      "category": "communication-presentation"
+    },
+    {
+      "name": "Tableau",
+      "aliases": [
+        "tableau"
+      ],
+      "category": "reporting-kpis-dashboards"
+    },
+    {
+      "name": "Power BI",
+      "aliases": [
+        "power bi",
+        "powerbi"
+      ],
+      "category": "reporting-kpis-dashboards"
+    },
+    {
+      "name": "Visio",
+      "aliases": [
+        "visio"
+      ],
+      "category": "process-modeling-improvement"
+    },
+    {
+      "name": "Lucidchart",
+      "aliases": [
+        "lucidchart"
+      ],
+      "category": "process-modeling-improvement"
+    },
+    {
+      "name": "ChatGPT",
+      "aliases": [
+        "chatgpt"
+      ],
+      "category": "ai-assisted-analysis"
+    },
+    {
+      "name": "Microsoft Word",
+      "aliases": [
+        "microsoft word"
+      ],
+      "category": "requirements-analysis-documentation"
+    },
+    {
+      "name": "Microsoft Access",
+      "aliases": [
+        "microsoft access"
+      ],
+      "category": "sql-data-querying"
+    },
+    {
+      "name": "Microsoft Office",
+      "aliases": [
+        "microsoft office",
+        "ms office"
+      ],
+      "category": "spreadsheet-analysis"
+    },
+    {
+      "name": "Asana",
+      "aliases": [
+        "asana"
+      ],
+      "category": "project-coordination"
+    },
+    {
+      "name": "Python",
+      "aliases": [
+        "python",
+        "pandas",
+        "jupyter"
+      ],
+      "category": "programming-scripting"
+    },
+    {
+      "name": "R",
+      "aliases": [
+        "r programming",
+        "r language",
+        "rstudio"
+      ],
+      "category": "programming-scripting"
+    },
+    {
+      "name": "Visual Basic",
+      "aliases": [
+        "visual basic",
+        "vba",
+        "visual basic for applications"
+      ],
+      "category": "programming-scripting"
+    }
+  ],
+  "examples": [
+    {
+      "phrase": "prepare executive presentations and board materials",
+      "category": "communication-presentation"
+    },
+    {
+      "phrase": "use BI tools to visualize data insights for stakeholders",
+      "category": "reporting-kpis-dashboards"
+    },
+    {
+      "phrase": "map current-state and future-state finance processes",
+      "category": "process-modeling-improvement"
+    },
+    {
+      "phrase": "write acceptance criteria for new features",
+      "category": "requirements-analysis-documentation"
+    },
+    {
+      "phrase": "identify data quality issues and propose fixes",
+      "category": "root-cause-problem-solving"
+    },
+    {
+      "phrase": "configure SAP modules to meet functional requirements",
+      "category": "enterprise-systems-analysis"
+    }
+  ],
+  "unplaced": [
+    "apache spark",
+    "spark",
+    "hadoop",
+    "nosql",
+    "active directory",
+    "operating system",
+    "operating systems",
+    "office 365",
+    "microsoft 365",
+    "itil",
+    "detail oriented",
+    "detail orientation",
+    "attention to detail",
+    "bias for action",
+    "computer skills",
+    "translation"
+  ]
+}

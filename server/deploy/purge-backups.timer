@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily backup purge (also catches up after the VM was off)
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+OnBootSec=5min
+
+[Install]
+WantedBy=timers.target

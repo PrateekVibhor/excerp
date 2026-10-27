@@ -1,0 +1,91 @@
+appId: com.prateekvibhor.excerp
+---
+# Against the list demo server (npm run demo:lists; see e2e/README.md). The seeded building list is at 62%, the "reference" step, and nothing really builds it.
+# Its menu offers Cancel build and Close. Keep building changes nothing; Stop building ends in the calm "You stopped this list" message; Delete then removes it.
+- runFlow: ../shared/reset-demo.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- tapOn: "Skills list.*" # the tab's name carries ", New coverage" for the demo reader
+- extendedWaitUntil:
+    visible: "Treasury systems role"
+    timeout: 60000
+# open the building list from the panel: the first "Business analyst · Fintech" row (the Today group comes first; the shared list of the same name is under Yesterday)
+- tapOn: "Open lists"
+- extendedWaitUntil:
+    visible: "Skills lists"
+    timeout: 15000
+- tapOn:
+    text: "Business analyst · Fintech.*"
+    index: 0
+- extendedWaitUntil:
+    visible: "Building your list"
+    timeout: 60000
+- assertVisible: "62%"
+- assertVisible: "Matching library sources, in progress"
+- assertVisible: "Rating coverage, waiting"
+# its menu offers Cancel build and Close
+- tapOn: "List options"
+- extendedWaitUntil:
+    visible: "Cancel build"
+    timeout: 15000
+- assertVisible: "Close"
+- assertVisible: "Delete"
+- tapOn: "Close"
+- extendedWaitUntil:
+    notVisible: "Cancel build"
+    timeout: 15000
+# Keep building: nothing changes
+- tapOn: "List options"
+- tapOn: "Cancel build"
+- extendedWaitUntil:
+    visible: "Stop building this list?"
+    timeout: 15000
+- assertVisible: "Keep building"
+- assertVisible: "Stop building"
+- tapOn: "Keep building"
+- extendedWaitUntil:
+    notVisible: "Stop building this list?"
+    timeout: 15000
+- assertVisible: "62%"
+- assertNotVisible: "You stopped this list. Delete it or start a new one."
+# Stop building: the calm message, no red error, no Try again, no more progress
+- tapOn: "List options"
+- tapOn: "Cancel build"
+- extendedWaitUntil:
+    visible: "Stop building this list?"
+    timeout: 15000
+- tapOn: "Stop building"
+- extendedWaitUntil:
+    visible: "You stopped this list. Delete it or start a new one."
+    timeout: 30000
+- assertNotVisible: "62%"
+- assertNotVisible: "Try again"
+- assertNotVisible: "This list was cancelled."
+- assertNotVisible: "We couldn't build this list. Try again later."
+# the stopped list's menu: no Cancel build, Delete stays
+- tapOn: "List options"
+- extendedWaitUntil:
+    visible: "Delete"
+    timeout: 15000
+- assertNotVisible: "Cancel build"
+- assertVisible: "Close"
+# Delete removes it
+- tapOn: "Delete"
+- extendedWaitUntil:
+    visible: "Delete this list?"
+    timeout: 15000
+- tapOn: "Delete list"
+- extendedWaitUntil:
+    notVisible: "Delete this list?"
+    timeout: 15000
+- assertNotVisible: "You stopped this list. Delete it or start a new one."

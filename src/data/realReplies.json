@@ -1,0 +1,388 @@
+{
+  "signIn": {
+    "method": "POST",
+    "path": "/auth/google",
+    "status": 200,
+    "body": {
+      "status": "approved",
+      "session_token": "test-session-token",
+      "expires_at": "2026-11-09T12:00:00.000Z",
+      "account_ref": "EXC-R11N-B086"
+    }
+  },
+  "session": {
+    "method": "GET",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "status": "approved",
+      "expires_at": "2026-11-09T12:00:00.000Z",
+      "account_ref": "EXC-R11N-B086"
+    }
+  },
+  "options": {
+    "method": "GET",
+    "path": "/courses/options",
+    "status": 200,
+    "body": {
+      "roles": [
+        {
+          "name": "business analyst",
+          "label": "Business analyst",
+          "available": true
+        },
+        {
+          "name": "forward-deployed engineer",
+          "label": "Forward-deployed engineer",
+          "available": false
+        },
+        {
+          "name": "product manager",
+          "label": "Product manager",
+          "available": false
+        }
+      ],
+      "industries": [
+        {
+          "key": "fintech",
+          "label": "Fintech"
+        },
+        {
+          "key": "banking",
+          "label": "Banking"
+        },
+        {
+          "key": "insurance",
+          "label": "Insurance"
+        },
+        {
+          "key": "technology",
+          "label": "Technology and software"
+        },
+        {
+          "key": "healthcare",
+          "label": "Healthcare"
+        },
+        {
+          "key": "life-sciences",
+          "label": "Pharma and life sciences"
+        },
+        {
+          "key": "supply-chain",
+          "label": "Supply chain and logistics"
+        },
+        {
+          "key": "e-commerce",
+          "label": "E-commerce"
+        },
+        {
+          "key": "retail",
+          "label": "Retail"
+        },
+        {
+          "key": "manufacturing",
+          "label": "Manufacturing"
+        },
+        {
+          "key": "telecommunications",
+          "label": "Telecommunications"
+        },
+        {
+          "key": "energy",
+          "label": "Energy and utilities"
+        },
+        {
+          "key": "media",
+          "label": "Media and entertainment"
+        },
+        {
+          "key": "education",
+          "label": "Education"
+        },
+        {
+          "key": "government",
+          "label": "Government and public sector"
+        }
+      ]
+    }
+  },
+  "start": {
+    "method": "POST",
+    "path": "/courses",
+    "status": 202,
+    "body": {
+      "course_id": "7ba8e9ae-7f51-4855-b92d-5526bb0ed048",
+      "status": "finding_sources"
+    }
+  },
+  "approve": {
+    "method": "POST",
+    "path": "/courses/:id/approve",
+    "status": 200,
+    "body": {
+      "course_id": "e04d07a1-5de3-4c01-a01e-a9ef47cc276f",
+      "status": "building"
+    }
+  },
+  "cancel": {
+    "method": "POST",
+    "path": "/courses/:id/cancel",
+    "status": 200,
+    "body": {
+      "course_id": "e04d07a1-5de3-4c01-a01e-a9ef47cc276f",
+      "status": "cancelled"
+    }
+  },
+  "homeNotReady": {
+    "method": "GET",
+    "path": "/courses/:id",
+    "status": 200,
+    "body": {
+      "id": "e04d07a1-5de3-4c01-a01e-a9ef47cc276f",
+      "status": "cancelled",
+      "title": "a role",
+      "role": "role 1",
+      "industry": null,
+      "mode": "list"
+    }
+  },
+  "homeReady": {
+    "method": "GET",
+    "path": "/courses/:id",
+    "status": 200,
+    "body": {
+      "id": "c016d618-dacb-4705-9fc8-530160d1c1c0",
+      "status": "ready",
+      "title": "data analyst",
+      "role": "data analyst",
+      "industry": null,
+      "mode": "list",
+      "pool_size": 9,
+      "evidence_thin": false,
+      "evidence": {
+        "thin": false,
+        "similar_postings": 9,
+        "own_posting": false
+      },
+      "has_updates": false,
+      "seen_version": 0,
+      "industry_label": null,
+      "coverage": {
+        "total": 4,
+        "strong": 1,
+        "thin": 1,
+        "missing": 2,
+        "library_backed": 1,
+        "with_any_link": 2,
+        "library_backed_share": 0.25,
+        "any_link_share": 0.5,
+        "library_version": 1,
+        "rated_at": "2026-10-24T19:27:29.144Z"
+      },
+      "concepts": [
+        {
+          "id": "ac323d56-79b4-42eb-9152-ae66f69276d1",
+          "name": "data analyst skill 1",
+          "explanation": "A plain explanation of skill 1.",
+          "criticality": "high",
+          "mentions": 8,
+          "of_postings": 9,
+          "from_your_posting": false,
+          "in_your_posting": false,
+          "tools": [],
+          "display_name": "Display 0",
+          "position": 0,
+          "band": "strong",
+          "resources": [
+            {
+              "kind": "article",
+              "title": "Link 0.0",
+              "source": "Example Press",
+              "url": "https://links.example.org/0/0",
+              "why": "a clear explanation",
+              "vetted": true
+            },
+            {
+              "kind": "blog",
+              "title": "Link 0.1",
+              "source": "Example Press",
+              "url": "https://links.example.org/0/1",
+              "why": "a clear explanation",
+              "vetted": false
+            }
+          ]
+        },
+        {
+          "id": "969e57d6-e070-4f0f-b994-5d9e72d56b04",
+          "name": "data analyst skill 2",
+          "explanation": "A plain explanation of skill 2.",
+          "criticality": "high",
+          "mentions": 6,
+          "of_postings": 9,
+          "from_your_posting": false,
+          "in_your_posting": false,
+          "tools": [],
+          "display_name": "Display 1",
+          "position": 1,
+          "band": "thin",
+          "resources": [
+            {
+              "kind": "blog",
+              "title": "Link 1.0",
+              "source": "Example Press",
+              "url": "https://links.example.org/1/0",
+              "why": "a clear explanation",
+              "vetted": false
+            }
+          ]
+        },
+        {
+          "id": "1627182c-d341-42be-b1ea-1d2833867635",
+          "name": "data analyst skill 3",
+          "explanation": "A plain explanation of skill 3.",
+          "criticality": "medium",
+          "mentions": 5,
+          "of_postings": 9,
+          "from_your_posting": false,
+          "in_your_posting": false,
+          "tools": [],
+          "display_name": "Display 2",
+          "position": 2,
+          "band": "missing",
+          "resources": []
+        },
+        {
+          "id": "6c0ac9ff-d16c-463a-8cce-d1bc0c1e0f75",
+          "name": "data analyst skill 4",
+          "explanation": "A plain explanation of skill 4.",
+          "criticality": "medium",
+          "mentions": 4,
+          "of_postings": 9,
+          "from_your_posting": false,
+          "in_your_posting": false,
+          "tools": [],
+          "display_name": "Display 3",
+          "position": 3,
+          "band": "missing",
+          "resources": []
+        }
+      ]
+    }
+  },
+  "mine": {
+    "method": "GET",
+    "path": "/me/courses",
+    "status": 200,
+    "body": {
+      "courses": [
+        {
+          "id": "c016d618-dacb-4705-9fc8-530160d1c1c0",
+          "title": "data analyst",
+          "role": "data analyst",
+          "status": "ready",
+          "mode": "list",
+          "visibility": "shared",
+          "independent": false,
+          "industry": null,
+          "industry_label": null,
+          "custom_title": null,
+          "created_at": "2026-10-24T19:27:29.147Z",
+          "last_active_at": "2026-10-24T19:27:29.147Z",
+          "checked_at": null,
+          "refreshing": false,
+          "coverage": {
+            "total": 4,
+            "strong": 1,
+            "thin": 1,
+            "missing": 2
+          },
+          "progress": {
+            "read": 0,
+            "total": 0
+          },
+          "has_updates": false
+        },
+        {
+          "id": "7ba8e9ae-7f51-4855-b92d-5526bb0ed048",
+          "title": "business analyst",
+          "role": "business analyst",
+          "status": "finding_sources",
+          "mode": "list",
+          "visibility": "shared",
+          "independent": false,
+          "industry": null,
+          "industry_label": null,
+          "custom_title": null,
+          "created_at": "2026-10-24T19:27:29.094Z",
+          "last_active_at": "2026-10-10T12:00:00.000Z",
+          "checked_at": null,
+          "refreshing": false,
+          "coverage": null
+        }
+      ]
+    }
+  },
+  "open": {
+    "method": "POST",
+    "path": "/me/courses/:id/open",
+    "status": 204,
+    "body": null
+  },
+  "rename": {
+    "method": "PATCH",
+    "path": "/me/courses/:id",
+    "status": 204,
+    "body": null
+  },
+  "seen": {
+    "method": "POST",
+    "path": "/me/courses/:id/seen",
+    "status": 204,
+    "body": null
+  },
+  "changes": {
+    "method": "GET",
+    "path": "/courses/:id/changes?since=0",
+    "status": 200,
+    "body": {
+      "current_version": 1,
+      "changes": []
+    }
+  },
+  "refreshUpToDate": {
+    "method": "POST",
+    "path": "/courses/:id/refresh",
+    "status": 200,
+    "body": {
+      "course_id": "c016d618-dacb-4705-9fc8-530160d1c1c0",
+      "status": "up_to_date"
+    }
+  },
+  "refreshQueued": {
+    "method": "POST",
+    "path": "/courses/:id/refresh",
+    "status": 202,
+    "body": {
+      "course_id": "c016d618-dacb-4705-9fc8-530160d1c1c0",
+      "status": "queued"
+    }
+  },
+  "remove": {
+    "method": "DELETE",
+    "path": "/me/courses/:id",
+    "status": 204,
+    "body": null
+  },
+  "signOutOther": {
+    "method": "POST",
+    "path": "/auth/signout",
+    "status": 204,
+    "body": null
+  },
+  "deleteAccount": {
+    "method": "POST",
+    "path": "/auth/delete-account",
+    "status": 204,
+    "body": null
+  }
+}

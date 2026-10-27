@@ -1,0 +1,315 @@
+{
+ "role": "product-manager",
+ "built": "2026-10-16",
+ "rules": "see ../README.md",
+ "sources": [
+  {
+   "id": "ispma-spm-foundation",
+   "name": "ISPMA: Software Product Management syllabus, \"The Foundation\" (V.2.1 Student edition, PDF)",
+   "url": "https://ispma.org/wp-content/uploads/2022/11/ISPMA-SPM-Foundation-Syllabus-V.2.1_Student.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: software product management body of knowledge for product managers.",
+   "rationale": "The certifying body's syllabus for the core of software product management (the SPM framework: strategy, planning, development, marketing, sales, support).",
+   "licence": "\"License to use: CC BY 4.0 (creativecommons.org/licenses/by/4.0/)\" (in the document)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read (pypdf)",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1033443,
+    "text_verified": true,
+    "text_chars_read": 110038,
+    "note": "Version dated 2022-05-09; 45 pages. ISPMA is the professional body that certifies software product managers; this is the published student syllabus."
+   },
+   "quotable": "yes: CC BY 4.0, quote with attribution",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "ispma-spm-product-planning",
+   "name": "ISPMA: SPM \"Excellence in Product Planning\" syllabus (V.2.0 Student edition, PDF)",
+   "url": "https://ispma.org/wp-content/uploads/2022/11/ISPMA-SPM-Excellence-in-Product-Planning-Syllabus-V2.0-Student-Edition.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: software product management body of knowledge for product managers.",
+   "rationale": "ISPMA's advanced syllabus on product planning: roadmapping, requirements, release planning.",
+   "licence": "\"License to use: CC BY 4.0 (creativecommons.org/licenses/by/4.0/)\" (in the document)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read (pypdf)",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 972572,
+    "text_verified": true,
+    "text_chars_read": 83397,
+    "note": "Version dated 2022-06-22; 35 pages. ISPMA is the professional body that certifies software product managers; this is the published student syllabus."
+   },
+   "quotable": "yes: CC BY 4.0, quote with attribution",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "ispma-spm-product-strategy",
+   "name": "ISPMA: SPM \"Excellence in Product Strategy\" syllabus (V.2.1 Student edition, PDF)",
+   "url": "https://ispma.org/wp-content/uploads/2022/11/ISPMA-SPM-Excellence-in-Product-Strategy-Syllabus-V.2.1-Student-Edition.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: software product management body of knowledge for product managers.",
+   "rationale": "ISPMA's advanced syllabus on product strategy: vision, positioning, portfolio, business models.",
+   "licence": "\"License to use: CC BY 4.0 (creativecommons.org/licenses/by/4.0/)\" (in the document)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read (pypdf)",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1193731,
+    "text_verified": true,
+    "text_chars_read": 98655,
+    "note": "Version dated 2022-06-22; 44 pages. ISPMA is the professional body that certifies software product managers; this is the published student syllabus."
+   },
+   "quotable": "yes: CC BY 4.0, quote with attribution",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "ispma-spm-strategic-management",
+   "name": "ISPMA: SPM \"Excellence in Strategic Management\" syllabus (V.2.0 Student edition, PDF)",
+   "url": "https://ispma.org/wp-content/uploads/2023/06/ISPMA-SPM-Excellence-in-Strategic-Management-Syllabus-V.2.0-Student-1.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: software product management body of knowledge for product managers.",
+   "rationale": "ISPMA's advanced syllabus on strategic management of product organisations.",
+   "licence": "\"License to use: CC BY 4.0 (creativecommons.org/licenses/by/4.0/)\" (in the document)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read (pypdf)",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 759030,
+    "text_verified": true,
+    "text_chars_read": 57256,
+    "note": "Version dated 2023-06-30; 24 pages. ISPMA is the professional body that certifies software product managers; this is the published student syllabus."
+   },
+   "quotable": "yes: CC BY 4.0, quote with attribution",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "basecamp-shape-up",
+   "name": "Basecamp: Shape Up (free online book, intro page)",
+   "url": "https://basecamp.com/shapeup",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: a product development method (shaping, betting, cycles) for product teams.",
+   "rationale": "Basecamp's own product development method, published free online by the company that uses it. Describes how one company works; many teams adapt it.",
+   "licence": "Copyright ©1999-2026 37signals LLC. All rights reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 60895,
+    "text_verified": true,
+    "text_chars_read": 11415,
+    "note": "Only the introduction page was read; the book chapters were not individually opened. The book is free online; the print and ebook copies are not what is listed."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "producttalk-opportunity-solution-trees",
+   "name": "Product Talk (Teresa Torres): Opportunity Solution Trees",
+   "url": "https://www.producttalk.org/opportunity-solution-trees/",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: continuous discovery technique for product managers.",
+   "rationale": "Individual practitioner (author of Continuous Discovery Habits) whose discovery methods are widely used by product teams; the article is free, her book is paid and excluded.",
+   "licence": "Product Talk © 2026 (page footer); no reuse terms stated",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 94174,
+    "text_verified": true,
+    "text_chars_read": 35241,
+    "note": "Page metadata: published 2023-12-06, modified 2026-09-29. The URL I tried (/opportunity-solution-tree/) redirected here."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "atlassian-product-management",
+   "name": "Atlassian: Product Management (guide)",
+   "url": "https://www.atlassian.com/agile/product-management",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: what product management is and how product managers work.",
+   "rationale": "A tooling company's own guide to product management as its customers' teams practise it.",
+   "licence": "Copyright © 2026 Atlassian (page footer); no reuse terms stated",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 2282006,
+    "text_verified": true,
+    "text_chars_read": 36350,
+    "note": "Page metadata: published 2026-03-16."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "producttalk-ai-evals",
+   "name": "Product Talk (Teresa Torres): AI Evals: A Hands-On Guide for Product Teams",
+   "url": "https://www.producttalk.org/ai-evals/",
+   "layer": "ai-native",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "product-manager"
+   ],
+   "applies_to_note": "Set from the page content: written for product teams (evals as a discovery habit).",
+   "rationale": "A practitioner's guide to evaluating AI features, aimed at product managers rather than engineers.",
+   "licence": "Product Talk © 2026 (page footer); no reuse terms stated",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 92933,
+    "text_verified": true,
+    "text_chars_read": 34896,
+    "note": "Page metadata: published 2026-09-02, modified 2026-09-29. It recommends a paid course by others with a referral link; that course is not listed."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  }
+ ],
+ "uses_shared": [
+  "iiba-core-standard",
+  "scrum-guide",
+  "govuk-service-manual",
+  "atlassian-user-stories",
+  "amazon-culture-and-processes",
+  "fowler-user-story",
+  "cohn-user-stories",
+  "impact-mapping",
+  "nist-ai-rmf",
+  "nist-genai-profile",
+  "google-pair-guidebook",
+  "microsoft-hax-toolkit",
+  "openai-identifying-scaling-ai-use-cases",
+  "microsoft-learn-ai-hub",
+  "openai-academy",
+  "anthropic-academy",
+  "nvidia-dli",
+  "google-skills",
+  "openai-practical-guide-to-agents",
+  "anthropic-building-effective-agents",
+  "pragmatic-framework-page",
+  "pragmatic-framework-ebook",
+  "svpg-empowered-product-teams",
+  "svpg-product-discovery",
+  "svpg-product-management-start-here",
+  "anthropic-demystifying-evals",
+  "openai-evaluation-best-practices",
+  "hamel-ai-evals"
+ ],
+ "checked_and_excluded": [
+  {
+   "name": "Scrum.org Evidence-Based Management Guide, online EBM Guide and Nexus Guide",
+   "url": "https://www.scrum.org/resources/evidence-based-management-guide",
+   "result": "HTTP 202 with an empty challenge page (CloudFront bot check) on all scrum.org pages tried",
+   "date": "2026-10-16",
+   "reason": "could not be opened by the check tool; open by hand before listing (the proposal expected these to be open)"
+  },
+  {
+   "name": "Intercom product management book",
+   "url": "https://www.intercom.com/resources/books/intercom-product-management",
+   "result": "redirected to the Intercom homepage",
+   "date": "2026-10-16",
+   "reason": "the page is gone or moved; not listed"
+  },
+  {
+   "name": "Anthropic: How AI is transforming work at Anthropic",
+   "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+   "result": "opens, about 47,000 characters, no wall",
+   "date": "2026-10-16",
+   "reason": "dropped: it is about engineers (71 mentions of engineer, none of product manager), not product management"
+  },
+  {
+   "name": "PMI-CPMAI guide, Scrum.org PSPO-AI course, SVPG and Pragmatic paid books and courses, ProdBOK, the Hamel Husain and Shreya Shankar Maven course",
+   "url": null,
+   "result": "paid, member-only or preview-only (not opened)",
+   "date": "2026-10-16",
+   "reason": "excluded by the access rule"
+  }
+ ]
+}

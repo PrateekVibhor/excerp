@@ -1,0 +1,218 @@
+{
+ "role": "forward-deployed-engineer",
+ "built": "2026-10-16",
+ "rules": "see ../README.md",
+ "sources": [
+  {
+   "id": "swebok-guide-v4",
+   "name": "IEEE Computer Society: Guide to the Software Engineering Body of Knowledge (SWEBOK) v4.0a",
+   "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "free_account",
+   "perspective": "canonical",
+   "pipeline_readable": false,
+   "applies_to": [
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content: the engineering half of the role (software construction, architecture, testing, operations, security).",
+   "rationale": "The professional society's consensus body of knowledge for software engineering. Forward-deployed engineer has no body of its own, so its engineering side borrows from SWEBOK (approved in the proposal).",
+   "licence": "User License Agreement on the SWEBOK page: \"You may quote or reproduce reasonable passages from SWEBOK 4.0 in a review, article, scholarly, or educational material, provided that you provide an appropriate citation to the source document.\" It also says \"You may not post SWEBOK version 4.0 publicly, or provide any manner of public access to your downloaded document, including through links.\" (so cite the computer.org page, never link a copy of the PDF)",
+   "free_parts": "overview, FAQs and terms are open; the guide PDF is reached through a download page (reported as an email form, not observed)",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "opened the SWEBOK overview page and the download page without credentials; the guide PDF was not downloaded",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 414936,
+    "text_verified": true,
+    "text_chars_read": 28564,
+    "note": "The overview page (about 28,000 characters: scope, FAQs, terms) opens with no login and was read. The download page (…/software-engineering/v4) is script-rendered: no form is visible in a plain fetch, so the email form comes from the proposal and a search result, not from observation. The guide itself was not opened, so its text was not read."
+   },
+   "quotable": "yes for reasonable passages with citation, per the license text on the page; the guide itself was not opened",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms).",
+   "access_confirmed": false
+  },
+  {
+   "id": "palantir-fdse-job-posting",
+   "name": "Palantir: Forward Deployed Software Engineer (job posting, Vilnius)",
+   "url": "https://jobs.lever.co/palantir/98b81271-9e15-40b7-8dce-0c62f24702f9",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content: Palantir (which coined the role) describing it first-hand.",
+   "rationale": "Palantir's own description of the forward-deployed engineer role: working directly with customers, owning end-to-end delivery in small teams. Role-description text only; postings close, so it is kept only while the page is live.",
+   "licence": "no copyright or reuse statement found on the page",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 731145,
+    "text_verified": true,
+    "text_chars_read": 6640,
+    "note": "Page metadata: datePosted 2022-01-26. One location variant of a posting that Palantir repeats for many offices. Postings are ephemeral; the monthly check must confirm the page is still live."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "anthropic-staff-fde-job-posting",
+   "name": "Anthropic: Staff Forward Deployed Engineer (job posting)",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content: an AI lab describing the forward-deployed role (embedding with strategic customers, leading architecture, shipping AI applications).",
+   "rationale": "Anthropic's own description of its forward-deployed engineer role at staff level. Role-description text only; postings close.",
+   "licence": "no copyright or reuse statement found on the page",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 101146,
+    "text_verified": true,
+    "text_chars_read": 16420,
+    "note": "Page metadata: published 2026-10-14. Two sibling Anthropic FDE postings (Applied AI and Custom Agents) were already closed (the URLs redirect to the jobs index), which shows how short-lived postings are. The pay range on the posting is not used."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  },
+  {
+   "id": "databricks-forward-deployed-engineering",
+   "name": "Databricks: Forward Deployed Engineering: Delivering Business Outcomes with AI (blog)",
+   "url": "https://www.databricks.com/blog/forward-deployed-engineering-delivering-business-outcomes-ai",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "forward-deployed-engineer"
+   ],
+   "applies_to_note": "Set from the page content: a company describing its forward-deployed engineering organisation and how it differs from consulting.",
+   "rationale": "Databricks' own account of moving its professional services into an engineering-led, embedded delivery model. Vendor announcement, so it is also marketing.",
+   "licence": "© Databricks 2026. All rights reserved. (page footer)",
+   "free_parts": "whole page",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 735021,
+    "text_verified": true,
+    "text_chars_read": 13845,
+    "note": "Page metadata: datePublished 2026-06-11. Customer figures on the page are Databricks' own claims."
+   },
+   "quotable": "short attributed quotes only; no reuse terms stated",
+   "next_check": "2026-11-16",
+   "status": "active",
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms)."
+  }
+ ],
+ "uses_shared": [
+  "iiba-core-standard",
+  "scrum-guide",
+  "nist-ai-rmf",
+  "nist-genai-profile",
+  "microsoft-learn-ai-hub",
+  "openai-academy",
+  "anthropic-academy",
+  "nvidia-dli",
+  "google-skills",
+  "openai-practical-guide-to-agents",
+  "anthropic-building-effective-agents",
+  "databricks-governance-best-practices",
+  "snowflake-data-governance-best-practices",
+  "aws-creating-a-data-strategy",
+  "gcp-data-mesh-architecture",
+  "microsoft-caf-purview-governance-baselines",
+  "cloudflare-unified-data-platform",
+  "nebius-choosing-storage-for-deep-learning",
+  "svpg-product-discovery",
+  "anthropic-demystifying-evals",
+  "openai-evaluation-best-practices",
+  "hamel-ai-evals"
+ ],
+ "checked_and_excluded": [
+  {
+   "name": "Palantir blog: Dev versus Delta; Who Wants to be a Delta?; A Day in the Life of a Palantir Forward Deployed Software Engineer; A Day in the Life of a Palantir Deployment Strategist; Deploying Full Spectrum AI in Days: How AIP Bootcamps Work",
+   "url": "https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87",
+   "result": "HTTP 403 (Cloudflare \"Attention Required\") on blog.palantir.com and the medium.com copy; the blog's RSS feed is open but holds only the latest 10 posts, none of them these",
+   "date": "2026-10-16",
+   "reason": "blocked the check tool; open by hand before listing. These are the most direct first-party FDE practice writing and the main gap in this folder."
+  },
+  {
+   "name": "OpenAI Forward Deployed Engineer posting",
+   "url": "https://openai.com/careers/forward-deployed-engineer-%28fde%29-seattle-seattle/",
+   "result": "HTTP 403 to the check tool",
+   "date": "2026-10-16",
+   "reason": "could not be opened; open by hand before listing"
+  },
+  {
+   "name": "Anthropic Forward Deployed Engineer, Applied AI and Custom Agents postings",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5121563008",
+   "result": "redirect to the Anthropic jobs index (posting closed)",
+   "date": "2026-10-16",
+   "reason": "postings close; not listed. The Staff FDE posting is live and is listed."
+  },
+  {
+   "name": "Palantir AIP Bootcamp handout (PDF, hosted by Hannover Messe)",
+   "url": "https://www.hannovermesse.de/apollo/hannover_messe_2024/obs/Binary/A1354173/Palantir%20AIP%20Bootcamp.pdf",
+   "result": "opens, one page of marketing text, no copyright line",
+   "date": "2026-10-16",
+   "reason": "dropped: a one-page handout hosted by a trade fair, thin as a source"
+  },
+  {
+   "name": "DAMA Guide / DMBOK",
+   "url": null,
+   "result": "not reused",
+   "date": "2026-10-16",
+   "reason": "the 2008 First Edition was removed from the library; no current free DAMA guide exists, so DAMA is skipped for this role as instructed"
+  },
+  {
+   "name": "IIBA CBAP Handbook",
+   "url": "https://www.iiba.org/globalassets/certification/cbap/files/cbap-handbook.pdf",
+   "result": "opens, text read",
+   "date": "2026-10-16",
+   "reason": "not reused: a certification handbook (application and exam logistics), a weak fit; the IIBA Core Standard is reused instead"
+  },
+  {
+   "name": "Carnegie Mellon SEI Digital Library",
+   "url": "https://www.sei.cmu.edu/library/",
+   "result": "landing page opens (about 6,000 characters)",
+   "date": "2026-10-16",
+   "reason": "not listed: terms are per document; add specific reports when one is chosen"
+  },
+  {
+   "name": "Salesforce Agentforce and Cohere forward-deployed engineer postings",
+   "url": null,
+   "result": "no postings found in searches",
+   "date": "2026-10-16",
+   "reason": "not checked; the proposal named them"
+  }
+ ]
+}

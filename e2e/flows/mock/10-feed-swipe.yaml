@@ -1,0 +1,29 @@
+appId: com.prateekvibhor.excerp
+---
+# Swiping a card right saves it to the Reading List; swiping left skips it. The Feed shows the newest article first.
+- runFlow: ../shared/clean-start.yaml
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Don't show this again"
+- assertVisible: "9 NEW"
+- swipe:
+    start: 50%, 50%
+    end: 92%, 50%
+- extendedWaitUntil:
+    visible: "Building a Retrieval Pipeline with Managed Vector Search"
+    timeout: 30000
+- assertNotVisible: "Open Model Weights Released for On-Device Use"
+- swipe:
+    start: 50%, 50%
+    end: 8%, 50%
+- extendedWaitUntil:
+    visible: "Model Update: Improved Tool Calling and Structured Outputs"
+    timeout: 30000
+- tapOn: "Reading List.*" # the tab's label carries the saved count once something is saved, e.g. "Reading List, 1"
+# In the list, a row's label is "Open <title>", so the title is matched inside it.
+- extendedWaitUntil:
+    visible: ".*Open Model Weights Released for On-Device Use"
+    timeout: 30000
+- assertNotVisible: ".*Building a Retrieval Pipeline with Managed Vector Search"

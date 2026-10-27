@@ -1,0 +1,70 @@
+appId: com.prateekvibhor.excerp
+---
+# The three intro cards: they show after sign-in with their three titles, Skip leaves them, and they come back on the next cold start. Ticking "Don't show this again"
+# and then leaving means they do not come back. (Needs an e2e-api build made with the intro cards.)
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+# card 1, with Skip, Next, the page dots and the checkbox
+- extendedWaitUntil:
+    visible: "Never miss what matters in tech"
+    timeout: 60000
+- assertVisible: "Swipe through a fast, short feed of the day's tech and AI stories. Save the good ones. Skip the rest."
+- assertVisible: "Card 1 of 3"
+- assertVisible: "Skip"
+- assertVisible: "Next"
+- assertVisible: "Don't show this again"
+- assertNotVisible: "Get started"
+# card 2, by swiping left
+- swipe:
+    start: 90%, 50%
+    end: 10%, 50%
+- extendedWaitUntil:
+    visible: "Turn a job posting into a learning plan"
+    timeout: 15000
+- assertVisible: "Paste a role you want. Excerp pulls out the skills it asks for and lines up articles and guides to learn each one."
+- assertVisible: "Card 2 of 3"
+- assertVisible: "Skip"
+- assertVisible: "Don't show this again"
+# card 3, with the Next button; the last card says Get started
+- tapOn: "Next"
+- extendedWaitUntil:
+    visible: "See where you're strong, and where you're thin"
+    timeout: 15000
+- assertVisible: "Every skill shows how well it is covered, so you know what to study first. Your reading list keeps everything in one place."
+- assertVisible: "Card 3 of 3"
+- assertVisible: "Get started"
+- assertNotVisible: "Next"
+- assertVisible: "Skip"
+- assertVisible: "Don't show this again"
+# Skip leaves, with nothing ticked: the Feed shows
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Never miss what matters in tech"
+# the next cold start (the reader stays signed in): the cards are back
+- launchApp
+- extendedWaitUntil:
+    visible: "Never miss what matters in tech"
+    timeout: 60000
+- assertVisible: "Card 1 of 3"
+# tick the box and leave
+- tapOn: "Don't show this again"
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+# the next cold start: straight to the Feed. The cards cover the app from its first frame, so the Feed showing means the cards were not wanted.
+- launchApp
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Never miss what matters in tech"
+- assertNotVisible: "Don't show this again"

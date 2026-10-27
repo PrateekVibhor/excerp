@@ -1,0 +1,5 @@
+appId: com.prateekvibhor.excerp
+---
+# Puts the list demo server (npm run demo:lists, in server/) back to its six seeded Skills lists. Fails the flow if the server does not answer 200.
+- runScript: ../../scripts/reset-demo.js
+- assertTrue: ${output.resetDemoStatus == 200}

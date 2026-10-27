@@ -1,0 +1,85 @@
+# Runs on the VM: docker compose up -d --build (from this folder, next to .env).
+# .env holds the API keys, POSTGRES_PASSWORD and the run settings; see .env.example.
+x-server: &server
+  build:
+    context: ..
+    dockerfile: server/Dockerfile
+  image: swipy-server
+  restart: unless-stopped
+  env_file: .env
+  environment:
+    DATABASE_URL: postgres://swipy:${POSTGRES_PASSWORD}@postgres:5432/swipy
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: swipy
+      POSTGRES_USER: swipy
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Runs only when the data volume is first created.
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U swipy -d swipy"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    # No ports: only the api and worker reach the database.
+
+  api:
+    <<: *server
+    environment:
+      DATABASE_URL: postgres://swipy:${POSTGRES_PASSWORD}@postgres:5432/swipy
+      # Believe X-Forwarded-For only from the Caddy container below, so the per-address limit sees the visitor.
+      TRUST_PROXY: 172.30.0.10
+      # One line per deleted account (the time and a one-way hash, never the email or name), so a restore from a backup can delete
+      # them again. It is on the host, outside the database volume and the pg_dump backups, which is the point of it.
+      DELETION_LOG_PATH: /var/lib/excerp/deleted-accounts.log
+    volumes:
+      # Create it once on the host, owned by the container's user (uid 1000):
+      #   mkdir ~/excerp-deletions && sudo chown 1000:1000 ~/excerp-deletions
+      - ../../excerp-deletions:/var/lib/excerp
+      # The Sign in with Apple key (a .p8 file), read-only, for revoking Apple access when an account is deleted. Keep it outside this folder, mode 600, owned by uid 1000:
+      #   mkdir -m 700 ~/apple-keys, copy the key there as apple-sign-in.p8, sudo chown 1000:1000 on it. APPLE_PRIVATE_KEY_PATH=/run/secrets/apple.p8 in .env.
+      - ../../apple-keys/apple-sign-in.p8:/run/secrets/apple.p8:ro
+    ports:
+      # Still published so builds that use http://<ip>:8080 keep working. Remove this block once testers are on
+      # the https://YOUR-API-HOST build; Caddy reaches the API on the internal network.
+      - "8080:8080"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data     # the certificate and its account: losing it means asking Let's Encrypt again
+      - caddy_config:/config
+    networks:
+      default:
+        ipv4_address: 172.30.0.10
+    depends_on:
+      - api
+
+  worker:
+    <<: *server
+    command: ["node", "--disable-warning=MODULE_TYPELESS_PACKAGE_JSON", "src/worker.ts"]
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:

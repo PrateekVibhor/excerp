@@ -1,0 +1,14 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { createNebiusChat } from '../src/llm.ts';
+import { loadTaxonomy } from '../src/courses/taxonomy/taxonomy.ts';
+import { mapPhrases } from '../src/courses/taxonomy/map.ts';
+const here = new URL('.', import.meta.url).pathname;
+const tokens = { in: 0, out: 0 };
+const chat = createNebiusChat({ apiKey: process.env.NEBIUS_API_KEY!.trim(), model: process.env.NEBIUS_MODEL!.trim(), maxTokens: 8000, timeoutMs: 180_000, onUsage: (u) => void ((tokens.in += u.prompt_tokens), (tokens.out += u.completion_tokens)) });
+const t = loadTaxonomy(`${here}../reference-library/business-analyst/categories.json`);
+const phrases = readFileSync(`${here}out/ba-mapping-holdout.md`, 'utf8').split('\n').filter((l) => l.startsWith('| ') && !l.startsWith('| phrase') && !l.startsWith('|---')).map((l) => l.split('|')[1]!.trim());
+const r = await mapPhrases(chat, t, phrases);
+const nm = (id: string) => (id.startsWith('new:') ? `NEW ${r.proposals.find((p) => `new:${p.id}` === id)?.name}` : t.categories.find((c) => c.id === id)?.name ?? id);
+const out = r.mapped.map((m) => `| ${m.phrase} | ${m.categories.map(nm).join(' + ') || '(none)'} [${m.source}] | | ${m.tools.join(', ')} |`);
+writeFileSync(`${here}out/ba-mapping-holdout-v2.md`, `tokens ${tokens.in}/${tokens.out}\n` + out.join('\n'));
+console.log(phrases.length, 'phrases; tokens', tokens);

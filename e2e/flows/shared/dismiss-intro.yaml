@@ -1,0 +1,18 @@
+appId: com.prateekvibhor.excerp
+---
+# Build 6 shows three intro cards over the app after sign-in (on the mock build, at once), on every cold start. This leaves them with Skip, nothing ticked,
+# and proves they are gone before the flow goes on. It works on any build: with no cards it waits out the limit once, then does nothing, so call it only
+# where the cards would appear (after sign-in, or straight after clean-start on the mock build). The cards are recognised by their own checkbox, "Don't show this again",
+# which no other screen has, so this can never tap the Feed's "Skip" by mistake.
+- extendedWaitUntil:
+    visible: "Don't show this again"
+    timeout: 60000
+    optional: true
+- runFlow:
+    when:
+      visible: "Don't show this again"
+    commands:
+      - tapOn: "Skip"
+      - extendedWaitUntil:
+          notVisible: "Don't show this again"
+          timeout: 15000

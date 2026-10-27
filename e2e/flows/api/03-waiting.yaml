@@ -1,0 +1,33 @@
+appId: com.prateekvibhor.excerp
+---
+# A reader who is not approved sees the waiting screen and none of the app. So does a reader whose email Google has not verified.
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: not approved"
+- extendedWaitUntil:
+    visible: "Waiting for approval"
+    timeout: 60000
+- assertVisible: "Check again"
+- assertNotVisible: "Feed"
+- assertNotVisible: "Reading List"
+- assertNotVisible: "Profile"
+- assertNotVisible: "9 NEW"
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: unverified"
+- extendedWaitUntil:
+    visible: "Waiting for approval"
+    timeout: 60000
+- assertNotVisible: "Feed"
+- assertNotVisible: "9 NEW"

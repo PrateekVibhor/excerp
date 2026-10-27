@@ -1,0 +1,34 @@
+appId: com.prateekvibhor.excerp
+---
+# A waiting reader is added to the allow-list, taps "Check again", and gets in without Google's sheet opening a second time.
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: not approved"
+- extendedWaitUntil:
+    visible: "Waiting for approval"
+    timeout: 60000
+- tapOn: "Check again"
+- extendedWaitUntil:
+    visible: "Still waiting. Check again later."
+    timeout: 60000
+- assertNotVisible: "9 NEW"
+- runScript:
+    file: ../../scripts/allow.js
+    env:
+      ALLOW_EMAIL: stranger@example.com
+- assertTrue: ${output.allowStatus == 200}
+- tapOn: "Check again"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Choose an account"
+- assertNotVisible: "Waiting for approval"
+- assertVisible: "9 NEW"
+- assertVisible: "Feed"

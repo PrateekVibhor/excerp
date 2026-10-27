@@ -1,0 +1,51 @@
+appId: com.prateekvibhor.excerp
+---
+# Going through every card ends on "You're all caught up". The first two cards are swiped by hand, the rest use the Skip button.
+- runFlow: ../shared/clean-start.yaml
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Don't show this again"
+- swipe:
+    start: 50%, 50%
+    end: 8%, 50%
+- extendedWaitUntil:
+    visible: "Building a Retrieval Pipeline with Managed Vector Search"
+    timeout: 30000
+- swipe:
+    start: 50%, 50%
+    end: 92%, 50%
+- extendedWaitUntil:
+    visible: "Model Update: Improved Tool Calling and Structured Outputs"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Scaling Recommendation Inference on Commodity Hardware"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Memory-Efficient Training for Long-Context Models"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "A Practical Guide to Evaluating Generative AI Systems"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "How Large Firms Are Rethinking the Operating Model for AI"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "What Rising Rates Mean for Long-Term Portfolio Construction"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "How Early-Stage Founders Decide When to Raise"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "You're all caught up"
+    timeout: 30000
+- assertVisible: "0 NEW"
+- assertVisible: "9 stories reviewed · 1 saved this session"

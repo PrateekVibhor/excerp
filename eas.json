@@ -1,0 +1,84 @@
+{
+  "cli": {
+    "version": ">= 24.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "autoIncrement": true,
+      "ios": {
+        "simulator": false
+      },
+      "env": {
+        "EXPO_PUBLIC_DATA_SOURCE": "api",
+        "EXPO_PUBLIC_API_URL": "https://YOUR-API-HOST"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "autoIncrement": true,
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_DATA_SOURCE": "api",
+        "EXPO_PUBLIC_API_URL": "https://YOUR-API-HOST",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "517530287826-6va475tb3d2ohjbmlijk1lt289onpknf.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID": "517530287826-a8np1b1csis8lnqv2tm9na3firhjkfeu.apps.googleusercontent.com"
+      }
+    },
+    "development-simulator": {
+      "extends": "development",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "e2e-api": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_DATA_SOURCE": "api",
+        "EXPO_PUBLIC_API_URL": "http://localhost:8787",
+        "EXPO_PUBLIC_E2E": "true"
+      }
+    },
+    "e2e-mock": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_DATA_SOURCE": "mock"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_DATA_SOURCE": "api",
+        "EXPO_PUBLIC_API_URL": "https://YOUR-API-HOST",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "517530287826-6va475tb3d2ohjbmlijk1lt289onpknf.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID": "517530287826-a8np1b1csis8lnqv2tm9na3firhjkfeu.apps.googleusercontent.com"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6821470330"
+      }
+    }
+  }
+}

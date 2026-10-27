@@ -1,0 +1,5 @@
+appId: com.prateekvibhor.excerp
+---
+# Puts the test server back to a known state. Fails the flow if the server does not answer 200.
+- runScript: ../../scripts/reset.js
+- assertTrue: ${output.resetStatus == 200}

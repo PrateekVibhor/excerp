@@ -1,0 +1,19 @@
+appId: com.prateekvibhor.excerp
+---
+# Closing Google's sheet without choosing an account goes back to the sign-in screen, with no error.
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- tapOn: "Sign in with Google"
+- extendedWaitUntil:
+    visible: "Choose an account"
+    timeout: 10000
+- tapOn: "Cancel"
+- extendedWaitUntil:
+    notVisible: "Choose an account"
+    timeout: 10000
+- assertVisible: "Welcome to Excerp"
+- assertVisible: "Sign in with Google"
+- assertNotVisible: "Couldn't sign in with Google. Try again."
+- assertNotVisible: "Waiting for approval"

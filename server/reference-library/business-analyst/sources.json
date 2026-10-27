@@ -1,0 +1,422 @@
+{
+ "role": "business-analyst",
+ "built": "2026-10-16",
+ "rules": "see ../README.md",
+ "sources": [
+  {
+   "id": "ireb-cpre-glossary",
+   "name": "IREB CPRE Online Glossary (requirements engineering)",
+   "url": "https://cpre.ireb.org/en/downloads-and-resources/glossary",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The International Requirements Engineering Board's definitions of core requirements-engineering terms, the central reference for its certification.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© IREB)",
+   "free_parts": "whole glossary",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 741786,
+    "text_verified": true
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "ireb-cpre-foundation-syllabus",
+   "name": "IREB CPRE Foundation Level Syllabus v3.2 (PDF, hosted by ISQI)",
+   "url": "https://isqi.org/media/7f/9a/3e/1744288053/cpre_foundationlevel_syllabus_EN_v.3.2.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The learning objectives for IREB's foundation certification, hosted by ISQI, the examining institute. It is the most detailed free statement of requirements-engineering knowledge.",
+   "licence": "terms stated in the document itself: \"Any individual or group of individuals may use this syllabus as a basis for articles, books, or other derived publications, provided the copyright of the authors and IREB e.V. as the source and owner of this document is acknowledged in such publications.\"",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials; full text extracted and read",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 561683,
+    "text_verified": true,
+    "text_check": {
+     "tool": "pypdf 6.21.0 (+ cryptography, for the AES-encrypted IREB file)",
+     "pages": 49,
+     "characters_extracted": 96021,
+     "pages_with_text": 47
+    },
+    "reuse_terms": {
+     "quote": "Any individual or group of individuals may use this syllabus as a basis for articles, books, or other derived publications, provided the copyright of the authors and IREB e.V. as the source and owner of this document is acknowledged in such publications.",
+     "where": "\"Terms of Use\" page; it also says \"No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means ... without the prior written permission of either the authors or IREB e.V.\""
+    },
+    "quotable": "derived use with attribution is permitted; reproduction needs written permission, so paraphrase and cite, do not copy passages",
+    "note": "Syllabus v3.2.0, February 26, 2024. The file is AES-encrypted (owner-password restrictions, opens with an empty password); text extraction worked."
+   },
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "bcs-ba-foundation-syllabus",
+   "name": "BCS Foundation Certificate in Business Analysis: syllabus (PDF)",
+   "url": "https://www.bcs.org/media/e3fllbw3/ba-foundation-syllabus.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The UK chartered institute's syllabus for business analysis: role, strategic context, investigating business situations, business cases and requirements.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© BCS)",
+   "free_parts": "whole document",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 7535435,
+    "text_verified": true,
+    "note": "Text layer read (sample sentences extracted)."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "pmi-pba-exam-content-outline",
+   "name": "PMI-PBA Examination Content Outline (PDF)",
+   "url": "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/professional-business-analysis-exam-outline.pdf",
+   "layer": "institutional",
+   "tier": 1,
+   "access": "open",
+   "perspective": "canonical",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "PMI's statement of the tasks and domains of professional business analysis (needs assessment, planning, analysis, traceability, evaluation). Its practice guides are paid and excluded.",
+   "licence": "all rights reserved by the publisher (not verified on the page); free to read, quote briefly with attribution (© PMI)",
+   "free_parts": "content outline only",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 5682485,
+    "text_verified": true,
+    "note": "Text layer read in part (title and headings extracted)."
+   },
+   "citation_policy": "attributed_citation_only",
+   "decision_note": "Attributed citation only: short quotes with clear attribution, pointing the learner to the real page; never full-text reproduction (same approach as the owner decision of 2026-10-16 for documents with no stated reuse terms). No licence or reuse statement was checked on the page or in the document when it was verified.",
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "iiba-ai-impact-blog",
+   "name": "IIBA: AI's Impact on Business Analysis (blog, July 2023)",
+   "url": "https://www.iiba.org/business-analysis-blogs/ais-impact-on-business-analysis/",
+   "layer": "ai-native",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "A practitioner article (by a co-founder of an analysis consultancy) on how AI changes business analysis, published on the professional body's public blog. Dated 2023, so check currency.",
+   "licence": "© IIBA / the author",
+   "free_parts": "whole article",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 181425,
+    "text_verified": true,
+    "note": "The page shows \"Become a Member\" only as site navigation; the article body (about 6,800 characters) loads in full with no wall."
+   },
+   "next_check": "2026-11-16",
+   "status": "active",
+   "tier_note": "Tier 3 on purpose: the article is by an individual practitioner (a consultancy co-founder), published on the IIBA blog, so it is not an IIBA statement. Proposal text says tier 2; left at 3 per its own tier rules."
+  },
+  {
+   "id": "arxiv-llms-in-requirements-engineering",
+   "name": "Advancing Requirements Engineering through Generative AI: Assessing the Role of LLMs (arXiv 2310.13976)",
+   "url": "https://arxiv.org/abs/2310.13976",
+   "layer": "ai-native",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "Academic paper on using large language models in elicitation, analysis, specification and validation. Research, not practice: a lead, a lower tier than company documentation.",
+   "licence": "author-chosen licence on arXiv (not checked)",
+   "free_parts": "abstract page and full-text link",
+   "last_verified": {
+    "date": "2026-10-16",
+    "how": "fetched without credentials",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 40618,
+    "text_verified": true
+   },
+   "next_check": "2026-11-16",
+   "status": "active"
+  },
+  {
+   "id": "thinkcloudly-change-management-in-business-analysis-thinkclo",
+   "name": "Change Management in Business Analysis - ThinkCloudly",
+   "url": "https://thinkcloudly.com/blog/change-management-process-business-analysis",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The blog discusses change management specifically from a business analysis perspective, targeting BAs. Found for the \"Change management and adoption\" gap; the page teaches it (52 mentions, checked twice).",
+   "licence": "No reuse terms checked; the page is linked and never reproduced",
+   "free_parts": "whole page (linked)",
+   "last_verified": {
+    "date": "2026-10-18",
+    "how": "opened by the source finder without credentials on two independent runs; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 18650,
+    "text_verified": true,
+    "access_confirmed": true
+   },
+   "citation_policy": "link-only",
+   "decision_note": "Vetted automatically by the source finder on 2026-10-18: opens without an account, written for the role, and teaches \"Change management and adoption\" (evidence: \"Best Practices for Effective Change Management Following best practices makes the change management process smoother and\"). Confirmed on two independent runs (the second on 2026-10-18); admitted automatically (tier 3), with the reader flag as the safety net.",
+   "next_check": "2026-11-17",
+   "status": "removed"
+  },
+  {
+   "id": "skillogic-why-domain-knowledge-matters-for-every-business-an",
+   "name": "Why Domain Knowledge Matters for Every Business Analyst",
+   "url": "https://skillogic.com/blog/domain-knowledge-matters-for-every-business-analyst",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "The page explains why domain knowledge matters specifically for business analysts. Found for the \"Industry and domain knowledge\" gap; the page teaches it (26 mentions, checked twice).",
+   "licence": "No reuse terms checked; the page is linked and never reproduced",
+   "free_parts": "whole page (linked)",
+   "last_verified": {
+    "date": "2026-10-18",
+    "how": "opened by the source finder without credentials on two independent runs; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 18753,
+    "text_verified": true,
+    "access_confirmed": true
+   },
+   "citation_policy": "link-only",
+   "decision_note": "Vetted automatically by the source finder on 2026-10-18: opens without an account, written for the role, and teaches \"Industry and domain knowledge\" (evidence: \"In business analysis, domain knowledge refers to a thorough understanding of the specific industry, sector, or operation\"). Confirmed on two independent runs (the second on 2026-10-18); admitted automatically (tier 3), with the reader flag as the safety net.",
+   "next_check": "2026-11-17",
+   "status": "active"
+  },
+  {
+   "id": "businessanalystschool-importance-of-domain-knowledge-for-bus",
+   "name": "Importance of Domain Knowledge for Business Analysts - Business Analyst School",
+   "url": "https://businessanalystschool.com/importance-of-domain-knowledge-for-business-analysts",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "It is an article/tutorial explaining why domain knowledge matters for business analysts. Found for the \"Industry and domain knowledge\" gap; the page teaches it (8 mentions, checked twice).",
+   "licence": "No reuse terms checked; the page is linked and never reproduced",
+   "free_parts": "whole page (linked)",
+   "last_verified": {
+    "date": "2026-10-18",
+    "how": "opened by the source finder without credentials on two independent runs; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 4171,
+    "text_verified": true,
+    "access_confirmed": true
+   },
+   "citation_policy": "link-only",
+   "decision_note": "Vetted automatically by the source finder on 2026-10-18: opens without an account, written for the role, and teaches \"Industry and domain knowledge\" (evidence: \"Domain knowledge means knowledge of a specific field, industry or business area.\"). Confirmed on two independent runs (the second on 2026-10-18); admitted automatically (tier 3), with the reader flag as the safety net.",
+   "next_check": "2026-11-17",
+   "status": "active"
+  },
+  {
+   "id": "atlassian-what-is-dashboard-reporting-a-guide-to-data-driven",
+   "name": "What is Dashboard Reporting? A Guide to Data-Driven Insights",
+   "url": "https://www.atlassian.com/work-management/project-management/dashboard-reporting",
+   "layer": "practical",
+   "tier": 2,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "It offers a tutorial on dashboard reporting that is relevant to business analysts as part of the broader business team audience. Found for the \"Reporting, KPIs and dashboards\" gap; the page teaches it (98 mentions, checked twice).",
+   "licence": "No reuse terms checked; the page is linked and never reproduced",
+   "free_parts": "whole page (linked)",
+   "last_verified": {
+    "date": "2026-10-18",
+    "how": "opened by the source finder without credentials on two independent runs; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 46326,
+    "text_verified": true,
+    "access_confirmed": true
+   },
+   "citation_policy": "link-only",
+   "decision_note": "Vetted automatically by the source finder on 2026-10-18: opens without an account, written for the role, and teaches \"Reporting, KPIs and dashboards\" (evidence: \"Dashboard reporting provides the most important information at that moment. Stay on top of KPIs with real-time visibilit\"). Confirmed on two independent runs (the second on 2026-10-18); admitted automatically (tier 2), with the reader flag as the safety net.",
+   "next_check": "2026-11-17",
+   "status": "removed"
+  },
+  {
+   "id": "businessanalyst-sql-for-business-analysts-a-beginner-s-tutor",
+   "name": "SQL For Business Analysts: A Beginner's Tutorial (Part I)",
+   "url": "https://businessanalyst.techcanvass.com/sql-tutorial-for-beginners-part-i",
+   "layer": "practical",
+   "tier": 3,
+   "access": "open",
+   "perspective": "field",
+   "pipeline_readable": true,
+   "applies_to": [
+    "business-analyst"
+   ],
+   "rationale": "It is a tutorial that teaches SQL concepts and queries specifically for business analysts. Found for the \"SQL and data querying\" gap; the page teaches it (103 mentions, checked twice).",
+   "licence": "No reuse terms checked; the page is linked and never reproduced",
+   "free_parts": "whole page (linked)",
+   "last_verified": {
+    "date": "2026-10-18",
+    "how": "opened by the source finder without credentials on two independent runs; page text read",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 14862,
+    "text_verified": true,
+    "access_confirmed": true
+   },
+   "citation_policy": "link-only",
+   "decision_note": "Vetted automatically by the source finder on 2026-10-18: opens without an account, written for the role, and teaches \"SQL and data querying\" (evidence: \"SQL for Business Analysts: A Beginner’s Guide to SQL (Part 1)\"). Confirmed on two independent runs (the second on 2026-10-18); admitted automatically (tier 3), with the reader flag as the safety net.",
+   "next_check": "2026-11-17",
+   "status": "active"
+  }
+ ],
+ "uses_shared": [
+  "iiba-core-standard",
+  "iiba-cbap-handbook",
+  "scrum-guide",
+  "govuk-service-manual",
+  "atlassian-user-stories",
+  "amazon-culture-and-processes",
+  "fowler-user-story",
+  "cohn-user-stories",
+  "impact-mapping",
+  "nist-ai-rmf",
+  "nist-genai-profile",
+  "google-pair-guidebook",
+  "microsoft-hax-toolkit",
+  "openai-identifying-scaling-ai-use-cases",
+  "microsoft-learn-ai-hub",
+  "openai-academy",
+  "anthropic-academy",
+  "nvidia-dli",
+  "google-skills",
+  "databricks-governance-best-practices",
+  "snowflake-data-governance-best-practices",
+  "aws-creating-a-data-strategy",
+  "gcp-data-mesh-architecture",
+  "microsoft-caf-purview-governance-baselines",
+  "cloudflare-unified-data-platform"
+ ],
+ "checked_and_excluded": [
+  {
+   "name": "IIBA BABOK Guide (online knowledge hub)",
+   "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+   "result": "HTTP 401: login required",
+   "date": "2026-10-16",
+   "reason": "member-gated"
+  },
+  {
+   "name": "IIBA Business Analysis Standard (online knowledge hub)",
+   "url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+   "result": "HTTP 401: login required",
+   "date": "2026-10-16",
+   "reason": "member-gated"
+  },
+  {
+   "name": "IIBA Agile Extension to the BABOK Guide",
+   "url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/agile-extension/",
+   "result": "IIBA's page says login or membership is needed (earlier check this session)",
+   "date": "2026-10-16",
+   "reason": "member-gated"
+  },
+  {
+   "name": "Agile Alliance: Agile 101",
+   "url": "https://www.agilealliance.org/agile101/",
+   "result": "HTTP 403 to the check tool (bot blocking)",
+   "date": "2026-10-16",
+   "reason": "could not be opened; re-check by hand before listing"
+  },
+  {
+   "name": "Hugging Face Learn",
+   "url": "https://huggingface.co/learn",
+   "result": "opens, but only a landing page",
+   "date": "2026-10-16",
+   "reason": "dropped: not relevant to business analysis"
+  },
+  {
+   "name": "Thoughtworks Technology Radar",
+   "url": "https://www.thoughtworks.com/radar",
+   "result": "opens",
+   "date": "2026-10-16",
+   "reason": "dropped: technology trends, weak fit for business analysis"
+  },
+  {
+   "name": "OpenAI: Identifying and Scaling AI Use Cases (HTML page)",
+   "url": "https://openai.com/business/guides-and-resources/identifying-and-scaling-ai-use-cases/",
+   "result": "HTTP 403 to the check tool (bot blocking)",
+   "date": "2026-10-16",
+   "reason": "the PDF edition is listed instead"
+  },
+  {
+   "name": "ISO/IEC/IEEE 29148, BABOK v3 book, PMI practice guides, Working Backwards (book), Business Analysis (BCS book)",
+   "url": null,
+   "result": "paid or preview-only (not opened)",
+   "date": "2026-10-16",
+   "reason": "excluded by the access rule"
+  },
+  {
+   "name": "DAMA Guide to the DMBOK, First Edition (PDF)",
+   "url": "https://static1.squarespace.com/static/5530dddfe4b0679504639dc1/t/6773ae97cb4ccf79b34a711a/1735634600737/DAMA+Guide+1.pdf",
+   "result": "opened and text read (176 pages)",
+   "date": "2026-10-16",
+   "reason": "removed by owner decision: an 18-year-old edition (preface November 2008) in a fast-moving field, not worth keeping even as a stand-in. No current free DAMA guide exists (DMBOK2 Revised Edition is sold as a book; DMBOK 3.0 has no released text found)."
+  }
+ ]
+}

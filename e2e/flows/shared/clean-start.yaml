@@ -1,0 +1,6 @@
+appId: com.prateekvibhor.excerp
+---
+# Every flow starts here: the app's data and keychain are erased and the app is started fresh, so nothing is left from before.
+- launchApp:
+    clearState: true
+    clearKeychain: true

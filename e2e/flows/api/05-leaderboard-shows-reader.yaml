@@ -1,0 +1,80 @@
+appId: com.prateekvibhor.excerp
+---
+# A reader who passes a quiz appears on the leaderboard with a count of 1, marked as themselves. There is no saved profile, so the
+# name sent is the app's fallback, "Reader". The quiz article is the fourth card: "Scaling Recommendation Inference on Commodity Hardware".
+- runFlow: ../shared/reset-server.yaml
+- runFlow: ../shared/clean-start.yaml
+- extendedWaitUntil:
+    visible: "Welcome to Excerp"
+    timeout: 60000
+- runFlow:
+    file: ../shared/sign-in-as.yaml
+    env:
+      READER: "Test reader: approved"
+- runFlow: ../shared/dismiss-intro.yaml
+- extendedWaitUntil:
+    visible: "Open Model Weights Released for On-Device Use"
+    timeout: 60000
+- assertNotVisible: "Don't show this again"
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Building a Retrieval Pipeline with Managed Vector Search"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Model Update: Improved Tool Calling and Structured Outputs"
+    timeout: 30000
+- tapOn: "Skip"
+- extendedWaitUntil:
+    visible: "Scaling Recommendation Inference on Commodity Hardware"
+    timeout: 30000
+- tapOn: "Scaling Recommendation Inference on Commodity Hardware"
+- extendedWaitUntil:
+    visible: "Take quiz"
+    timeout: 30000
+- tapOn: "Take quiz"
+- extendedWaitUntil:
+    visible: "Question 1 of 3"
+    timeout: 30000
+- tapOn: "Latency and cost"
+- extendedWaitUntil:
+    visible: "Correct"
+    timeout: 15000
+- tapOn: "Next"
+- extendedWaitUntil:
+    visible: "Question 2 of 3"
+    timeout: 15000
+- tapOn: "Frequently used embeddings"
+- extendedWaitUntil:
+    visible: "Correct"
+    timeout: 15000
+- tapOn: "Next"
+- extendedWaitUntil:
+    visible: "Question 3 of 3"
+    timeout: 15000
+- tapOn: "In stages, compared with the old path"
+- extendedWaitUntil:
+    visible: "Correct"
+    timeout: 15000
+- tapOn: "See result"
+- extendedWaitUntil:
+    visible: "You answered all 3 questions correctly. This article now carries a Verified badge."
+    timeout: 30000
+- tapOn: "Done"
+- extendedWaitUntil:
+    visible: "Back"
+    timeout: 30000
+- tapOn: "Back"
+- extendedWaitUntil:
+    visible: "Profile"
+    timeout: 30000
+- tapOn: "Profile"
+- scrollUntilVisible:
+    element: "Leaderboard"
+    timeout: 30000
+- tapOn: "Leaderboard"
+- extendedWaitUntil:
+    visible: "1. Reader, 1 verified, you"
+    timeout: 60000
+- assertNotVisible: "No verified readers yet"
+- assertNotVisible: "Couldn't load the leaderboard"

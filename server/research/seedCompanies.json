@@ -1,0 +1,509 @@
+[
+ {
+  "employer": "JPMorgan Chase",
+  "group": "finance",
+  "domains": [
+   "jpmorganchase.com",
+   "jpmc.fa.oraclecloud.com"
+  ]
+ },
+ {
+  "employer": "Citi",
+  "group": "finance",
+  "domains": [
+   "jobs.citi.com"
+  ]
+ },
+ {
+  "employer": "Goldman Sachs",
+  "group": "finance",
+  "domains": [
+   "goldmansachs.com",
+   "higher.gs.com"
+  ]
+ },
+ {
+  "employer": "Morgan Stanley",
+  "group": "finance",
+  "domains": [
+   "morganstanley.com"
+  ]
+ },
+ {
+  "employer": "Bank of America",
+  "group": "finance",
+  "domains": [
+   "careers.bankofamerica.com"
+  ]
+ },
+ {
+  "employer": "Wells Fargo",
+  "group": "finance",
+  "domains": [
+   "wellsfargojobs.com"
+  ]
+ },
+ {
+  "employer": "Capital One",
+  "group": "finance",
+  "domains": [
+   "capitalonecareers.com"
+  ]
+ },
+ {
+  "employer": "American Express",
+  "group": "finance",
+  "domains": [
+   "americanexpress.com",
+   "aexp.wd5.myworkdayjobs.com"
+  ]
+ },
+ {
+  "employer": "BlackRock",
+  "group": "finance",
+  "domains": [
+   "careers.blackrock.com",
+   "blackrock.wd1.myworkdayjobs.com"
+  ]
+ },
+ {
+  "employer": "Fidelity Investments",
+  "group": "finance",
+  "domains": [
+   "jobs.fidelity.com"
+  ]
+ },
+ {
+  "employer": "Charles Schwab",
+  "group": "finance",
+  "domains": [
+   "schwabjobs.com"
+  ]
+ },
+ {
+  "employer": "Vanguard",
+  "group": "finance",
+  "domains": [
+   "vanguardjobs.com"
+  ]
+ },
+ {
+  "employer": "Visa",
+  "group": "payments",
+  "domains": [
+   "corporate.visa.com",
+   "usa.visa.com"
+  ]
+ },
+ {
+  "employer": "Mastercard",
+  "group": "payments",
+  "domains": [
+   "careers.mastercard.com",
+   "mastercard.wd1.myworkdayjobs.com"
+  ]
+ },
+ {
+  "employer": "Stripe",
+  "group": "payments",
+  "domains": [
+   "stripe.com"
+  ]
+ },
+ {
+  "employer": "PayPal",
+  "group": "payments",
+  "domains": [
+   "paypal.com",
+   "paypal.eightfold.ai"
+  ]
+ },
+ {
+  "employer": "Microsoft",
+  "group": "tech",
+  "domains": [
+   "careers.microsoft.com",
+   "jobs.careers.microsoft.com"
+  ]
+ },
+ {
+  "employer": "Google",
+  "group": "tech",
+  "domains": [
+   "google.com"
+  ]
+ },
+ {
+  "employer": "Amazon",
+  "group": "tech",
+  "domains": [
+   "amazon.jobs"
+  ]
+ },
+ {
+  "employer": "Meta",
+  "group": "tech",
+  "domains": [
+   "metacareers.com"
+  ]
+ },
+ {
+  "employer": "Salesforce",
+  "group": "tech",
+  "domains": [
+   "careers.salesforce.com",
+   "salesforce.com"
+  ]
+ },
+ {
+  "employer": "IBM",
+  "group": "tech",
+  "domains": [
+   "ibm.com"
+  ]
+ },
+ {
+  "employer": "Palantir",
+  "group": "tech",
+  "domains": [
+   "palantir.com",
+   "jobs.lever.co"
+  ]
+ },
+ {
+  "employer": "Snowflake",
+  "group": "tech",
+  "domains": [
+   "careers.snowflake.com"
+  ]
+ },
+ {
+  "employer": "Databricks",
+  "group": "tech",
+  "domains": [
+   "databricks.com"
+  ]
+ },
+ {
+  "employer": "ServiceNow",
+  "group": "tech",
+  "domains": [
+   "servicenow.com"
+  ]
+ },
+ {
+  "employer": "Intuit",
+  "group": "tech",
+  "domains": [
+   "intuit.com"
+  ]
+ },
+ {
+  "employer": "Deloitte",
+  "group": "business",
+  "domains": [
+   "apply.deloitte.com"
+  ]
+ },
+ {
+  "employer": "Accenture",
+  "group": "business",
+  "domains": [
+   "accenture.com"
+  ]
+ },
+ {
+  "employer": "PwC",
+  "group": "business",
+  "domains": [
+   "pwc.com"
+  ]
+ },
+ {
+  "employer": "OpenAI",
+  "group": "tech",
+  "domains": [
+   "openai.com",
+   "jobs.ashbyhq.com"
+  ]
+ },
+ {
+  "employer": "Anthropic",
+  "group": "tech",
+  "domains": [
+   "anthropic.com",
+   "job-boards.greenhouse.io",
+   "boards.greenhouse.io"
+  ]
+ },
+ {
+  "employer": "Apple",
+  "group": "tech",
+  "domains": [
+   "jobs.apple.com"
+  ]
+ },
+ {
+  "employer": "Nvidia",
+  "group": "tech",
+  "domains": [
+   "nvidia.com",
+   "nvidia.wd5.myworkdayjobs.com"
+  ]
+ },
+ {
+  "employer": "Adobe",
+  "group": "tech",
+  "domains": [
+   "careers.adobe.com",
+   "adobe.wd5.myworkdayjobs.com"
+  ]
+ },
+ {
+  "employer": "Netflix",
+  "group": "tech",
+  "domains": [
+   "jobs.netflix.com"
+  ]
+ },
+ {
+  "employer": "Uber",
+  "group": "tech",
+  "domains": [
+   "uber.com"
+  ]
+ },
+ {
+  "employer": "Atlassian",
+  "group": "tech",
+  "domains": [
+   "atlassian.com"
+  ]
+ },
+ {
+  "employer": "Datadog",
+  "group": "tech",
+  "domains": [
+   "careers.datadoghq.com"
+  ]
+ },
+ {
+  "employer": "Cloudflare",
+  "group": "tech",
+  "domains": [
+   "cloudflare.com"
+  ]
+ },
+ {
+  "employer": "Twilio",
+  "group": "tech",
+  "domains": [
+   "twilio.com"
+  ]
+ },
+ {
+  "employer": "Workday",
+  "group": "tech",
+  "domains": [
+   "workday.com"
+  ]
+ },
+ {
+  "employer": "Oracle",
+  "group": "tech",
+  "domains": [
+   "oracle.com"
+  ]
+ },
+ {
+  "employer": "Perplexity",
+  "group": "ai",
+  "domains": [
+   "perplexity.ai"
+  ]
+ },
+ {
+  "employer": "ElevenLabs",
+  "group": "ai",
+  "domains": [
+   "elevenlabs.io"
+  ]
+ },
+ {
+  "employer": "Cohere",
+  "group": "ai",
+  "domains": [
+   "cohere.com"
+  ]
+ },
+ {
+  "employer": "Scale AI",
+  "group": "ai",
+  "domains": [
+   "scale.com"
+  ]
+ },
+ {
+  "employer": "xAI",
+  "group": "ai",
+  "domains": [
+   "x.ai"
+  ]
+ },
+ {
+  "employer": "Hugging Face",
+  "group": "ai",
+  "domains": [
+   "huggingface.co"
+  ]
+ },
+ {
+  "employer": "Character.AI",
+  "group": "ai",
+  "domains": [
+   "character.ai"
+  ]
+ },
+ {
+  "employer": "Glean",
+  "group": "ai",
+  "domains": [
+   "glean.com"
+  ]
+ },
+ {
+  "employer": "Harvey",
+  "group": "ai",
+  "domains": [
+   "harvey.ai"
+  ]
+ },
+ {
+  "employer": "Sierra",
+  "group": "ai",
+  "domains": [
+   "sierra.ai"
+  ]
+ },
+ {
+  "employer": "Anysphere (Cursor)",
+  "group": "ai",
+  "domains": [
+   "anysphere.inc",
+   "cursor.com"
+  ]
+ },
+ {
+  "employer": "Cognition",
+  "group": "ai",
+  "domains": [
+   "cognition.ai"
+  ]
+ },
+ {
+  "employer": "Replit",
+  "group": "ai",
+  "domains": [
+   "replit.com"
+  ]
+ },
+ {
+  "employer": "Runway",
+  "group": "ai",
+  "domains": [
+   "runwayml.com"
+  ]
+ },
+ {
+  "employer": "Brex",
+  "group": "startup",
+  "domains": [
+   "brex.com"
+  ]
+ },
+ {
+  "employer": "Ramp",
+  "group": "startup",
+  "domains": [
+   "ramp.com"
+  ]
+ },
+ {
+  "employer": "Plaid",
+  "group": "startup",
+  "domains": [
+   "plaid.com"
+  ]
+ },
+ {
+  "employer": "Coinbase",
+  "group": "startup",
+  "domains": [
+   "coinbase.com"
+  ]
+ },
+ {
+  "employer": "Robinhood",
+  "group": "startup",
+  "domains": [
+   "robinhood.com"
+  ]
+ },
+ {
+  "employer": "Rippling",
+  "group": "startup",
+  "domains": [
+   "rippling.com"
+  ]
+ },
+ {
+  "employer": "Deel",
+  "group": "startup",
+  "domains": [
+   "deel.com"
+  ]
+ },
+ {
+  "employer": "Gusto",
+  "group": "startup",
+  "domains": [
+   "gusto.com"
+  ]
+ },
+ {
+  "employer": "Retool",
+  "group": "startup",
+  "domains": [
+   "retool.com"
+  ]
+ },
+ {
+  "employer": "PostHog",
+  "group": "startup",
+  "domains": [
+   "posthog.com"
+  ]
+ },
+ {
+  "employer": "DoorDash",
+  "group": "startup",
+  "domains": [
+   "careersatdoordash.com",
+   "doordash.com"
+  ]
+ },
+ {
+  "employer": "Instacart",
+  "group": "startup",
+  "domains": [
+   "instacart.careers"
+  ]
+ },
+ {
+  "employer": "Airbnb",
+  "group": "startup",
+  "domains": [
+   "careers.airbnb.com"
+  ]
+ }
+]

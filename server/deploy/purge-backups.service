@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete database backups older than 30 days
+
+[Service]
+Type=oneshot
+ExecStart=%h/swipy/server/deploy/purge-backups.sh
