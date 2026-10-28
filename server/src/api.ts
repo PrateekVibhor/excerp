@@ -21,7 +21,7 @@ import { registerAuthRoutes, SIGN_INS_PER_HOUR_PER_EMAIL, SIGN_INS_PER_HOUR_PER_
 import { registerLeaderboardRoute } from './routes/leaderboard.ts';
 import { POSTS_PER_HOUR, POSTS_PER_HOUR_PER_IP, registerVerificationRoutes } from './routes/verifications.ts';
 
-export const DEFAULT_LIMIT = 30;
+export const DEFAULT_LIMIT = 60;
 export const MAX_LIMIT = 100;
 
 export interface ApiDeps {

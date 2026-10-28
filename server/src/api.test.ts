@@ -74,10 +74,11 @@ test('unknown routes are 404, and only GET is served', async () => {
   await app.close();
 });
 
-test('parseLimit: default 30, capped at 100, invalid values rejected', () => {
-  assert.equal(parseLimit(undefined), 30);
-  assert.equal(parseLimit(''), 30);
+test('parseLimit: default 60, capped at 100, invalid values rejected', () => {
+  assert.equal(parseLimit(undefined), 60);
+  assert.equal(parseLimit(''), 60);
   assert.equal(parseLimit('10'), 10);
+  assert.equal(parseLimit('30'), 30); // an explicit limit below the default still works
   assert.equal(parseLimit('100'), 100);
   assert.equal(parseLimit('500'), 100);
   for (const bad of ['0', '-1', '1.5', 'abc', '10abc', ['5', '6']]) assert.equal(parseLimit(bad), null, String(bad));
@@ -99,13 +100,14 @@ test('GET /feed returns Article objects with exactly the Article fields', async 
   await app.close();
 });
 
-test('GET /feed passes the limit through, defaults to 30 and caps at 100', async () => {
+test('GET /feed passes the limit through, defaults to 60 and caps at 100', async () => {
   const { reader, limits } = fakeReader([]);
   const app = await api({ articles: reader });
   await app.inject({ method: 'GET', url: '/feed' });
   await app.inject({ method: 'GET', url: '/feed?limit=10' });
+  await app.inject({ method: 'GET', url: '/feed?limit=30' });
   await app.inject({ method: 'GET', url: '/feed?limit=1000' });
-  assert.deepEqual(limits, [30, 10, 100]);
+  assert.deepEqual(limits, [60, 10, 30, 100]);
   await app.close();
 });
 
@@ -123,7 +125,7 @@ test('GET /feed accepts the user_id the app sends, and ignores it', async () => 
   const app = await api({ articles: reader });
   const res = await app.inject({ method: 'GET', url: '/feed?user_id=local-user' });
   assert.equal(res.statusCode, 200);
-  assert.deepEqual(limits, [30]);
+  assert.deepEqual(limits, [60]);
   await app.close();
 });
 
